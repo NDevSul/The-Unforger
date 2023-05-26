@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0411999E2A2040AB00628E84 /* UnforgerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0411999D2A2040AB00628E84 /* UnforgerApp.swift */; };
+		041199A02A2040AB00628E84 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0411999F2A2040AB00628E84 /* ContentView.swift */; };
+		041199A22A2040AC00628E84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041199A12A2040AC00628E84 /* Assets.xcassets */; };
+		041199A52A2040AC00628E84 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041199A42A2040AC00628E84 /* Preview Assets.xcassets */; };
+		041199AF2A2040AD00628E84 /* UnforgerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041199AE2A2040AD00628E84 /* UnforgerTests.swift */; };
+		041199B92A2040AD00628E84 /* UnforgerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041199B82A2040AD00628E84 /* UnforgerUITests.swift */; };
+		041199BB2A2040AD00628E84 /* UnforgerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041199BA2A2040AD00628E84 /* UnforgerUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		041199AB2A2040AD00628E84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 041199922A2040AB00628E84 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 041199992A2040AB00628E84;
+			remoteInfo = Unforger;
+		};
+		041199B52A2040AD00628E84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 041199922A2040AB00628E84 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 041199992A2040AB00628E84;
+			remoteInfo = Unforger;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0411999A2A2040AB00628E84 /* Unforger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Unforger.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0411999D2A2040AB00628E84 /* UnforgerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnforgerApp.swift; sourceTree = "<group>"; };
+		0411999F2A2040AB00628E84 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		041199A12A2040AC00628E84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		041199A42A2040AC00628E84 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		041199AA2A2040AD00628E84 /* UnforgerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnforgerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		041199AE2A2040AD00628E84 /* UnforgerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnforgerTests.swift; sourceTree = "<group>"; };
+		041199B42A2040AD00628E84 /* UnforgerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnforgerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		041199B82A2040AD00628E84 /* UnforgerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnforgerUITests.swift; sourceTree = "<group>"; };
+		041199BA2A2040AD00628E84 /* UnforgerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnforgerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		041199972A2040AB00628E84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		041199A72A2040AD00628E84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		041199B12A2040AD00628E84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		041199912A2040AB00628E84 = {
+			isa = PBXGroup;
+			children = (
+				0411999C2A2040AB00628E84 /* Unforger */,
+				041199AD2A2040AD00628E84 /* UnforgerTests */,
+				041199B72A2040AD00628E84 /* UnforgerUITests */,
+				0411999B2A2040AB00628E84 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0411999B2A2040AB00628E84 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0411999A2A2040AB00628E84 /* Unforger.app */,
+				041199AA2A2040AD00628E84 /* UnforgerTests.xctest */,
+				041199B42A2040AD00628E84 /* UnforgerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0411999C2A2040AB00628E84 /* Unforger */ = {
+			isa = PBXGroup;
+			children = (
+				0411999D2A2040AB00628E84 /* UnforgerApp.swift */,
+				0411999F2A2040AB00628E84 /* ContentView.swift */,
+				041199A12A2040AC00628E84 /* Assets.xcassets */,
+				041199A32A2040AC00628E84 /* Preview Content */,
+			);
+			path = Unforger;
+			sourceTree = "<group>";
+		};
+		041199A32A2040AC00628E84 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				041199A42A2040AC00628E84 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		041199AD2A2040AD00628E84 /* UnforgerTests */ = {
+			isa = PBXGroup;
+			children = (
+				041199AE2A2040AD00628E84 /* UnforgerTests.swift */,
+			);
+			path = UnforgerTests;
+			sourceTree = "<group>";
+		};
+		041199B72A2040AD00628E84 /* UnforgerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				041199B82A2040AD00628E84 /* UnforgerUITests.swift */,
+				041199BA2A2040AD00628E84 /* UnforgerUITestsLaunchTests.swift */,
+			);
+			path = UnforgerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		041199992A2040AB00628E84 /* Unforger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 041199BE2A2040AD00628E84 /* Build configuration list for PBXNativeTarget "Unforger" */;
+			buildPhases = (
+				041199962A2040AB00628E84 /* Sources */,
+				041199972A2040AB00628E84 /* Frameworks */,
+				041199982A2040AB00628E84 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Unforger;
+			productName = Unforger;
+			productReference = 0411999A2A2040AB00628E84 /* Unforger.app */;
+			productType = "com.apple.product-type.application";
+		};
+		041199A92A2040AD00628E84 /* UnforgerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 041199C12A2040AD00628E84 /* Build configuration list for PBXNativeTarget "UnforgerTests" */;
+			buildPhases = (
+				041199A62A2040AD00628E84 /* Sources */,
+				041199A72A2040AD00628E84 /* Frameworks */,
+				041199A82A2040AD00628E84 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				041199AC2A2040AD00628E84 /* PBXTargetDependency */,
+			);
+			name = UnforgerTests;
+			productName = UnforgerTests;
+			productReference = 041199AA2A2040AD00628E84 /* UnforgerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		041199B32A2040AD00628E84 /* UnforgerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 041199C42A2040AD00628E84 /* Build configuration list for PBXNativeTarget "UnforgerUITests" */;
+			buildPhases = (
+				041199B02A2040AD00628E84 /* Sources */,
+				041199B12A2040AD00628E84 /* Frameworks */,
+				041199B22A2040AD00628E84 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				041199B62A2040AD00628E84 /* PBXTargetDependency */,
+			);
+			name = UnforgerUITests;
+			productName = UnforgerUITests;
+			productReference = 041199B42A2040AD00628E84 /* UnforgerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		041199922A2040AB00628E84 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					041199992A2040AB00628E84 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					041199A92A2040AD00628E84 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 041199992A2040AB00628E84;
+					};
+					041199B32A2040AD00628E84 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 041199992A2040AB00628E84;
+					};
+				};
+			};
+			buildConfigurationList = 041199952A2040AB00628E84 /* Build configuration list for PBXProject "Unforger" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 041199912A2040AB00628E84;
+			productRefGroup = 0411999B2A2040AB00628E84 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				041199992A2040AB00628E84 /* Unforger */,
+				041199A92A2040AD00628E84 /* UnforgerTests */,
+				041199B32A2040AD00628E84 /* UnforgerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		041199982A2040AB00628E84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				041199A52A2040AC00628E84 /* Preview Assets.xcassets in Resources */,
+				041199A22A2040AC00628E84 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		041199A82A2040AD00628E84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		041199B22A2040AD00628E84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		041199962A2040AB00628E84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				041199A02A2040AB00628E84 /* ContentView.swift in Sources */,
+				0411999E2A2040AB00628E84 /* UnforgerApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		041199A62A2040AD00628E84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				041199AF2A2040AD00628E84 /* UnforgerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		041199B02A2040AD00628E84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				041199BB2A2040AD00628E84 /* UnforgerUITestsLaunchTests.swift in Sources */,
+				041199B92A2040AD00628E84 /* UnforgerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		041199AC2A2040AD00628E84 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 041199992A2040AB00628E84 /* Unforger */;
+			targetProxy = 041199AB2A2040AD00628E84 /* PBXContainerItemProxy */;
+		};
+		041199B62A2040AD00628E84 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 041199992A2040AB00628E84 /* Unforger */;
+			targetProxy = 041199B52A2040AD00628E84 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		041199BC2A2040AD00628E84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		041199BD2A2040AD00628E84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		041199BF2A2040AD00628E84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Unforger/Preview Content\"";
+				DEVELOPMENT_TEAM = R3FNGQNAVC;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nick.Unforger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		041199C02A2040AD00628E84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Unforger/Preview Content\"";
+				DEVELOPMENT_TEAM = R3FNGQNAVC;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nick.Unforger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		041199C22A2040AD00628E84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R3FNGQNAVC;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nick.UnforgerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Unforger.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Unforger";
+			};
+			name = Debug;
+		};
+		041199C32A2040AD00628E84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R3FNGQNAVC;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nick.UnforgerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Unforger.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Unforger";
+			};
+			name = Release;
+		};
+		041199C52A2040AD00628E84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R3FNGQNAVC;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nick.UnforgerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Unforger;
+			};
+			name = Debug;
+		};
+		041199C62A2040AD00628E84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = R3FNGQNAVC;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nick.UnforgerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Unforger;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		041199952A2040AB00628E84 /* Build configuration list for PBXProject "Unforger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				041199BC2A2040AD00628E84 /* Debug */,
+				041199BD2A2040AD00628E84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		041199BE2A2040AD00628E84 /* Build configuration list for PBXNativeTarget "Unforger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				041199BF2A2040AD00628E84 /* Debug */,
+				041199C02A2040AD00628E84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		041199C12A2040AD00628E84 /* Build configuration list for PBXNativeTarget "UnforgerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				041199C22A2040AD00628E84 /* Debug */,
+				041199C32A2040AD00628E84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		041199C42A2040AD00628E84 /* Build configuration list for PBXNativeTarget "UnforgerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				041199C52A2040AD00628E84 /* Debug */,
+				041199C62A2040AD00628E84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 041199922A2040AB00628E84 /* Project object */;
+}
