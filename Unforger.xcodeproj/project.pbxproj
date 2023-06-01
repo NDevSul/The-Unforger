@@ -15,6 +15,9 @@
 		041199B92A2040AD00628E84 /* UnforgerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041199B82A2040AD00628E84 /* UnforgerUITests.swift */; };
 		041199BB2A2040AD00628E84 /* UnforgerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041199BA2A2040AD00628E84 /* UnforgerUITestsLaunchTests.swift */; };
 		041199CA2A28749800628E84 /* TESTES.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041199C92A28749800628E84 /* TESTES.swift */; };
+		0442BB982A28FC1F00525AF8 /* NicknameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0442BB972A28FC1F00525AF8 /* NicknameView.swift */; };
+		0442BB9A2A28FC5600525AF8 /* RoleSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0442BB992A28FC5600525AF8 /* RoleSelectionView.swift */; };
+		0442BB9C2A28FCDB00525AF8 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0442BB9B2A28FCDB00525AF8 /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +49,9 @@
 		041199B82A2040AD00628E84 /* UnforgerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnforgerUITests.swift; sourceTree = "<group>"; };
 		041199BA2A2040AD00628E84 /* UnforgerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnforgerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		041199C92A28749800628E84 /* TESTES.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TESTES.swift; sourceTree = "<group>"; };
+		0442BB972A28FC1F00525AF8 /* NicknameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicknameView.swift; sourceTree = "<group>"; };
+		0442BB992A28FC5600525AF8 /* RoleSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleSelectionView.swift; sourceTree = "<group>"; };
+		0442BB9B2A28FCDB00525AF8 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,9 @@
 				041199C92A28749800628E84 /* TESTES.swift */,
 				041199A12A2040AC00628E84 /* Assets.xcassets */,
 				041199A32A2040AC00628E84 /* Preview Content */,
+				0442BB972A28FC1F00525AF8 /* NicknameView.swift */,
+				0442BB992A28FC5600525AF8 /* RoleSelectionView.swift */,
+				0442BB9B2A28FCDB00525AF8 /* ProfileView.swift */,
 			);
 			path = Unforger;
 			sourceTree = "<group>";
@@ -261,7 +270,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				041199A02A2040AB00628E84 /* ContentView.swift in Sources */,
+				0442BB9A2A28FC5600525AF8 /* RoleSelectionView.swift in Sources */,
 				041199CA2A28749800628E84 /* TESTES.swift in Sources */,
+				0442BB982A28FC1F00525AF8 /* NicknameView.swift in Sources */,
+				0442BB9C2A28FCDB00525AF8 /* ProfileView.swift in Sources */,
 				0411999E2A2040AB00628E84 /* UnforgerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
