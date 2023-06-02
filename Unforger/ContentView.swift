@@ -14,25 +14,34 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-            VStack {
-                if !isShowingProfile {
-                    NicknameView(nickname: $nickname, nextAction: { isShowingProfile = true })
-                } else if selectedRole == nil {
-                    RoleSelectionView(selectedRole: $selectedRole, confirmAction: { role in
-                        selectedRole = role
-                        isShowingProfile = true
-                    })
-                } else {
-                    ProfileView(nickname: nickname, selectedRole: selectedRole!)
+            ZStack {
+                Color.customBackground
+                    .edgesIgnoringSafeArea(.all)
+                
+                VStack {
+                    if !isShowingProfile {
+                        NicknameView(nickname: $nickname, nextAction: { isShowingProfile = true })
+                    } else if selectedRole == nil {
+                        RoleSelectionView(selectedRole: $selectedRole, confirmAction: { role in
+                            selectedRole = role
+                            isShowingProfile = true
+                        })
+                    } else {
+                        ProfileView(nickname: nickname, selectedRole: selectedRole!)
+                    }
                 }
             }
             .navigationTitle("The Unforger")
         }
     }
 }
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+    
+    struct ContentView_Previews: PreviewProvider {
+        static var previews: some View {
+            ContentView()
+        }
     }
-}
+    
+    extension Color {
+        static let customBackground = Color(hue: 0.115, saturation: 0.568, brightness: 0.986)
+    }
