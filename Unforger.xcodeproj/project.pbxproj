@@ -22,6 +22,7 @@
 		0480F5F12A2B84200060E7E4 /* DialogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0480F5A12A2B83F10060E7E4 /* DialogView.swift */; };
 		0480F5F22A2B84200060E7E4 /* BattleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0480F5A22A2B83F10060E7E4 /* BattleView.swift */; };
 		0480F5F42A2B84370060E7E4 /* OpeningDialogue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0480F5F32A2B84370060E7E4 /* OpeningDialogue.swift */; };
+		0480F5F62A2B93A90060E7E4 /* Skills.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0480F5F52A2B93A90060E7E4 /* Skills.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		0480F5A12A2B83F10060E7E4 /* DialogView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialogView.swift; sourceTree = "<group>"; };
 		0480F5A22A2B83F10060E7E4 /* BattleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BattleView.swift; sourceTree = "<group>"; };
 		0480F5F32A2B84370060E7E4 /* OpeningDialogue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpeningDialogue.swift; sourceTree = "<group>"; };
+		0480F5F52A2B93A90060E7E4 /* Skills.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skills.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				0409B7E62A2B652200A6F1EA /* Player.swift */,
+				0480F5F52A2B93A90060E7E4 /* Skills.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 				0409B7E72A2B652200A6F1EA /* Player.swift in Sources */,
 				0480F5F42A2B84370060E7E4 /* OpeningDialogue.swift in Sources */,
 				0409B7E92A2B86CE00A6F1EA /* ContentView.swift in Sources */,
+				0480F5F62A2B93A90060E7E4 /* Skills.swift in Sources */,
 				0442BB9C2A28FCDB00525AF8 /* ProfileView.swift in Sources */,
 				0411999E2A2040AB00628E84 /* UnforgerApp.swift in Sources */,
 				0480F5F12A2B84200060E7E4 /* DialogView.swift in Sources */,

@@ -4,7 +4,6 @@
 //
 //  Created by MacBook Pro on 26/05/23.
 //
-
 import SwiftUI
 
 struct RegisterView: View {
@@ -17,7 +16,11 @@ struct RegisterView: View {
                     .edgesIgnoringSafeArea(.all)
                 
                 VStack {
-                    Image("")
+                    Image("The_Unforger")
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(height: 150)
+                    
                     if !playerModel.isShowingProfile {
                         NicknameView(nickname: $playerModel.nickname, nextAction: { playerModel.isShowingProfile = true })
                     } else if playerModel.selectedRole == nil {
@@ -29,12 +32,12 @@ struct RegisterView: View {
                         ProfileView(nickname: playerModel.nickname, selectedRole: playerModel.selectedRole)
                     }
                 }
-                .navigationTitle("The Unforger")
             }
             
         }
     }
 }
+
     
     struct RegisterView_Previews: PreviewProvider {
         static var previews: some View {

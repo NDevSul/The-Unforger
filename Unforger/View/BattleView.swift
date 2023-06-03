@@ -22,15 +22,23 @@ struct BattleView: View {
                // Centered Content
                VStack {
                    // Dialog Box
-                   VStack(alignment: .leading, spacing: 10) {
+                   VStack(alignment: .leading) {
+                       
                        HStack(alignment: .top) {
-                           Image("assassin")
-                               .resizable()
-                               .aspectRatio(contentMode: .fit)
-                               .frame(width: 180, height: 100)
+                           Spacer()
                            
-                           Text("I will end your carreer monster!!")
+                           Image("assassin_model")
+                               .resizable()
+                               .aspectRatio(contentMode: .fill)
+                               .frame(width: 180, height: 100)
+                               .padding()
+                               .background(Color.customBackground)
+                           
+                           Spacer()
+                           
+                           Text("I will end your career, monster!!")
                                .padding(.vertical)
+                           Spacer()
                        }
                        .padding()
                        .background(Color.white)
@@ -38,14 +46,9 @@ struct BattleView: View {
                        .shadow(radius: 5)
                        
                        Spacer()
-                       
-                       Text("Choose your next move!!")
-                           .font(.title)
-                           .foregroundColor(.black)
-                       
-                       Spacer()
-                       
-                       // Buttons
+                   }
+                   
+                //buttons
                        VStack(spacing: 10) {
                            ForEach(1...5, id: \.self) { index in
                                Button(action: {
@@ -71,4 +74,11 @@ struct BattleView: View {
                Spacer()
            }
        }
-   }
+   
+
+
+struct BattleView_Previews: PreviewProvider {
+    static var previews: some View {
+        BattleView()
+    }
+}
