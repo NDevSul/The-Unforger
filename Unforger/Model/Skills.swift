@@ -8,7 +8,8 @@
 import Foundation
 
 struct Skills {
+    var skillbutton : Int
     var skillname : String
     var skilldamage : Int
-    var skillmana : Int
+    var skillmana : String
 }

@@ -10,33 +10,31 @@ struct RegisterView: View {
     @State private var playerModel = Player(nickname: "", isShowingProfile: false)
     
     var body: some View {
-//        NavigationView {
-//            ZStack {
-//                Color.customBackground
-//                    .edgesIgnoringSafeArea(.all)
-//
-//                VStack {
-//                    Image("The_Unforger")
-//                        .resizable()
-//                        .aspectRatio(contentMode: .fill)
-//                        .frame(height: 150)
-//
-//                    if !playerModel.isShowingProfile {
-//                        NicknameView(nickname: $playerModel.nickname, nextAction: { playerModel.isShowingProfile = true })
-//                    } else if playerModel.selectedRole == nil {
-//                        RoleSelectionView(selectedRole: $playerModel.selectedRole, confirmAction: { role in
-//                            playerModel.selectedRole = role
-//                            playerModel.isShowingProfile = true
-//                        })
-//                    } else {
-//                        ProfileView(nickname: playerModel.nickname, selectedRole: playerModel.selectedRole)
-//                    }
-//                }
-//            }
-//
-//        }
-        
-        BattleView()
+        NavigationView {
+            ZStack {
+                Color.customBackground
+                    .edgesIgnoringSafeArea(.all)
+                
+                VStack {
+                    Image("The_Unforger")
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(height: 150)
+                    
+                    if !playerModel.isShowingProfile {
+                        NicknameView(nickname: $playerModel.nickname, nextAction: { playerModel.isShowingProfile = true })
+                    } else if playerModel.selectedRole == nil {
+                        RoleSelectionView(selectedRole: $playerModel.selectedRole, confirmAction: { role in
+                            playerModel.selectedRole = role
+                            playerModel.isShowingProfile = true
+                        })
+                    } else {
+                        ProfileView(nickname: playerModel.nickname, selectedRole: playerModel.selectedRole)
+                    }
+                }
+            }
+            
+        }
     }
 }
 

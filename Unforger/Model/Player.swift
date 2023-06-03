@@ -12,4 +12,3 @@ struct Player {
     var selectedRole: String?
     var isShowingProfile: Bool
 }
-
