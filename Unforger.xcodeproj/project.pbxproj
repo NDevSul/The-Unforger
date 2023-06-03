@@ -27,6 +27,9 @@
 		0480F6022A2B98DA0060E7E4 /* More Info.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0480F5FE2A2B98DA0060E7E4 /* More Info.txt */; };
 		0480F6032A2B98DA0060E7E4 /* Bitcheese.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0480F5FF2A2B98DA0060E7E4 /* Bitcheese.ttf */; };
 		0480F6062A2B99490060E7E4 /* FontsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0480F6052A2B99490060E7E4 /* FontsManager.swift */; };
+		25AF16552A2BB1040002FA14 /* Assasin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AF16542A2BB1040002FA14 /* Assasin.swift */; };
+		25AF16572A2BB1750002FA14 /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AF16562A2BB1750002FA14 /* Job.swift */; };
+		25AF16592A2BB6FB0002FA14 /* BattleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AF16582A2BB6FB0002FA14 /* BattleViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +73,9 @@
 		0480F5FE2A2B98DA0060E7E4 /* More Info.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "More Info.txt"; sourceTree = "<group>"; };
 		0480F5FF2A2B98DA0060E7E4 /* Bitcheese.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bitcheese.ttf; sourceTree = "<group>"; };
 		0480F6052A2B99490060E7E4 /* FontsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontsManager.swift; sourceTree = "<group>"; };
+		25AF16542A2BB1040002FA14 /* Assasin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assasin.swift; sourceTree = "<group>"; };
+		25AF16562A2BB1750002FA14 /* Job.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
+		25AF16582A2BB6FB0002FA14 /* BattleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BattleViewModel.swift; path = Unforger/Model/BattleViewModel.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +106,10 @@
 		0409B7E32A2B64B000A6F1EA /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				25AF16532A2BB0ED0002FA14 /* PlayerClass */,
 				0409B7E62A2B652200A6F1EA /* Player.swift */,
 				0480F5F52A2B93A90060E7E4 /* Skills.swift */,
+				25AF16562A2BB1750002FA14 /* Job.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -109,6 +117,7 @@
 		0409B7E42A2B64BB00A6F1EA /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				25AF16582A2BB6FB0002FA14 /* BattleViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -196,6 +205,14 @@
 				0480F6052A2B99490060E7E4 /* FontsManager.swift */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		25AF16532A2BB0ED0002FA14 /* PlayerClass */ = {
+			isa = PBXGroup;
+			children = (
+				25AF16542A2BB1040002FA14 /* Assasin.swift */,
+			);
+			path = PlayerClass;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -333,14 +350,17 @@
 			files = (
 				041199A02A2040AB00628E84 /* RegisterView.swift in Sources */,
 				0442BB9A2A28FC5600525AF8 /* RoleSelectionView.swift in Sources */,
+				25AF16592A2BB6FB0002FA14 /* BattleViewModel.swift in Sources */,
 				0480F5F22A2B84200060E7E4 /* BattleView.swift in Sources */,
 				0442BB982A28FC1F00525AF8 /* NicknameView.swift in Sources */,
 				0409B7E72A2B652200A6F1EA /* Player.swift in Sources */,
+				25AF16572A2BB1750002FA14 /* Job.swift in Sources */,
 				0480F5F42A2B84370060E7E4 /* OpeningDialogue.swift in Sources */,
 				0480F6062A2B99490060E7E4 /* FontsManager.swift in Sources */,
 				0480F5F82A2B966C0060E7E4 /* OpeningDialogueCard.swift in Sources */,
 				0409B7E92A2B86CE00A6F1EA /* ContentView.swift in Sources */,
 				0480F5F62A2B93A90060E7E4 /* Skills.swift in Sources */,
+				25AF16552A2BB1040002FA14 /* Assasin.swift in Sources */,
 				0442BB9C2A28FCDB00525AF8 /* ProfileView.swift in Sources */,
 				0411999E2A2040AB00628E84 /* UnforgerApp.swift in Sources */,
 			);
