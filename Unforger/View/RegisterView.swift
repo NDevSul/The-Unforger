@@ -17,6 +17,7 @@ struct RegisterView: View {
                     .edgesIgnoringSafeArea(.all)
                 
                 VStack {
+                    Image("")
                     if !playerModel.isShowingProfile {
                         NicknameView(nickname: $playerModel.nickname, nextAction: { playerModel.isShowingProfile = true })
                     } else if playerModel.selectedRole == nil {
@@ -28,8 +29,9 @@ struct RegisterView: View {
                         ProfileView(nickname: playerModel.nickname, selectedRole: playerModel.selectedRole)
                     }
                 }
+                .navigationTitle("The Unforger")
             }
-            .navigationTitle("The Unforger")
+            
         }
     }
 }
