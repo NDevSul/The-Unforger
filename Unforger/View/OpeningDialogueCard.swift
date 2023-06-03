@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct DialogView: View {
+struct OpeningDialogueCard: View {
     let imageName: String
     let text: String
     let buttonTitle: String
@@ -43,8 +43,8 @@ struct DialogView: View {
     }
 }
 
-struct DialogView_Previews: PreviewProvider {
+struct OpeningDialogueCard_Previews: PreviewProvider {
     static var previews: some View {
-        DialogView(imageName: "", text: "", buttonTitle: "", buttonAction: {})
+        OpeningDialogueCard(imageName: "", text: "", buttonTitle: "", buttonAction: {})
     }
 }

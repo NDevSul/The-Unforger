@@ -10,58 +10,106 @@ struct BattleView: View {
     var body: some View {
            VStack {
                // Banner at the top
-               Text("Banner")
-                   .font(.largeTitle)
-                   .frame(maxWidth: .infinity)
-                   .padding()
-                   .background(Color.blue)
-                   .foregroundColor(.white)
-               
-               Spacer()
-               
                // Centered Content
                VStack {
                    // Dialog Box
                    VStack(alignment: .leading) {
-                       
-                       HStack(alignment: .top) {
-                           Spacer()
-                           
+                       HStack(alignment: .top){
                            Image("assassin_model")
                                .resizable()
                                .aspectRatio(contentMode: .fill)
                                .frame(width: 180, height: 100)
                                .padding()
-                               .background(Color.customBackground)
+                               .background(Color.white)
                            
-                           Spacer()
+                           Text("Health : 100\nMana : 100")
+                               .font(.system(size: 24, weight: .bold, design: .default))
+                               .foregroundColor(.black)
+                               .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
+                               .alignmentGuide(.leading) { _ in -100 }
                            
-                           Text("I will end your career, monster!!")
-                               .padding(.vertical)
                            Spacer()
                        }
-                       .padding()
+                       .frame(maxWidth: .infinity, maxHeight: .infinity)
+                       .background(Color.white)
+                       .padding(10)
                        .background(Color.white)
                        .cornerRadius(10)
                        .shadow(radius: 5)
-                       
                        Spacer()
                    }
+                   .fixedSize() // Fit the frame to the content
+                   Spacer()
+                  
                    
                 //buttons
                        VStack(spacing: 10) {
-                           ForEach(1...5, id: \.self) { index in
+                           
                                Button(action: {
-                                   // Action for each button
                                }) {
-                                   Text("Button \(index)")
-                                       .foregroundColor(.white)
+                                   Text("Skill 1")
+                                       .foregroundColor(.black)
                                        .padding()
                                        .frame(maxWidth: .infinity)
-                                       .background(Color.blue)
+                                       .background(Color.customBackground)
                                        .cornerRadius(10)
-                               }
+                                       .bold()
                            }
+                           Button(action: {
+                           }) {
+                               Text("Skill 2")
+                                   .foregroundColor(.black)
+                                   .padding()
+                                   .frame(maxWidth: .infinity)
+                                   .background(Color.customBackground)
+                                   .cornerRadius(10)
+                                   .bold()
+                       }
+                           
+                           Button(action: {
+                           }) {
+                               Text("Skill 3")
+                                   .foregroundColor(.black)
+                                   .padding()
+                                   .frame(maxWidth: .infinity)
+                                   .background(Color.customBackground)
+                                   .cornerRadius(10)
+                                   .bold()
+                       }
+                           
+                           Button(action: {
+                           }) {
+                               Text("Regenerate Health")
+                                   .foregroundColor(.black)
+                                   .padding()
+                                   .frame(maxWidth: .infinity)
+                                   .background(Color.customBackground)
+                                   .cornerRadius(10)
+                                   .bold()
+                       }
+                           
+                           Button(action: {
+                           }) {
+                               Text("Regenerate Mana")
+                                   .foregroundColor(.black)
+                                   .padding()
+                                   .frame(maxWidth: .infinity)
+                                   .background(Color.customBackground)
+                                   .cornerRadius(10)
+                                   .bold()
+                       }
+                           
+                           Button(action: {
+                           }) {
+                               Text("Surrender")
+                                   .foregroundColor(.black)
+                                   .padding()
+                                   .frame(maxWidth: .infinity)
+                                   .background(Color.red)
+                                   .cornerRadius(10)
+                                   .bold()
+                       }
+                           
                        }
                        .frame(maxWidth: .infinity)
                        .padding()

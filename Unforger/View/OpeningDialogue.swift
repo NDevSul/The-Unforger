@@ -21,7 +21,7 @@ struct OpeningDialogue: View {
             
             if showDialogs.count <= dialogs.count {
                 ForEach(0..<showDialogs.count, id: \.self) { index in
-                    DialogView(imageName: dialogs[index].imageName,
+                    OpeningDialogueCard(imageName: dialogs[index].imageName,
                                text: dialogs[index].text,
                                buttonTitle: dialogs[index].nextDialogButtonTitle) {
                         showDialogs.remove(at: index)
