@@ -18,6 +18,9 @@
 		0442BB982A28FC1F00525AF8 /* NicknameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0442BB972A28FC1F00525AF8 /* NicknameView.swift */; };
 		0442BB9A2A28FC5600525AF8 /* RoleSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0442BB992A28FC5600525AF8 /* RoleSelectionView.swift */; };
 		0442BB9C2A28FCDB00525AF8 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0442BB9B2A28FCDB00525AF8 /* ProfileView.swift */; };
+		0480F5F12A2B84200060E7E4 /* DialogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0480F5A12A2B83F10060E7E4 /* DialogView.swift */; };
+		0480F5F22A2B84200060E7E4 /* BattleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0480F5A22A2B83F10060E7E4 /* BattleView.swift */; };
+		0480F5F42A2B84370060E7E4 /* OpeningDialogue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0480F5F32A2B84370060E7E4 /* OpeningDialogue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +55,9 @@
 		0442BB972A28FC1F00525AF8 /* NicknameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicknameView.swift; sourceTree = "<group>"; };
 		0442BB992A28FC5600525AF8 /* RoleSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleSelectionView.swift; sourceTree = "<group>"; };
 		0442BB9B2A28FCDB00525AF8 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		0480F5A12A2B83F10060E7E4 /* DialogView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialogView.swift; sourceTree = "<group>"; };
+		0480F5A22A2B83F10060E7E4 /* BattleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BattleView.swift; sourceTree = "<group>"; };
+		0480F5F32A2B84370060E7E4 /* OpeningDialogue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpeningDialogue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,9 +104,12 @@
 			isa = PBXGroup;
 			children = (
 				0411999F2A2040AB00628E84 /* RegisterView.swift */,
+				0480F5A12A2B83F10060E7E4 /* DialogView.swift */,
+				0480F5A22A2B83F10060E7E4 /* BattleView.swift */,
 				0442BB972A28FC1F00525AF8 /* NicknameView.swift */,
 				0442BB992A28FC5600525AF8 /* RoleSelectionView.swift */,
 				0442BB9B2A28FCDB00525AF8 /* ProfileView.swift */,
+				0480F5F32A2B84370060E7E4 /* OpeningDialogue.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -295,10 +304,13 @@
 			files = (
 				041199A02A2040AB00628E84 /* RegisterView.swift in Sources */,
 				0442BB9A2A28FC5600525AF8 /* RoleSelectionView.swift in Sources */,
+				0480F5F22A2B84200060E7E4 /* BattleView.swift in Sources */,
 				0442BB982A28FC1F00525AF8 /* NicknameView.swift in Sources */,
 				0409B7E72A2B652200A6F1EA /* Player.swift in Sources */,
+				0480F5F42A2B84370060E7E4 /* OpeningDialogue.swift in Sources */,
 				0442BB9C2A28FCDB00525AF8 /* ProfileView.swift in Sources */,
 				0411999E2A2040AB00628E84 /* UnforgerApp.swift in Sources */,
+				0480F5F12A2B84200060E7E4 /* DialogView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
