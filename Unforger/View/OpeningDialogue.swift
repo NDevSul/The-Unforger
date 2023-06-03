@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct OpeningDialogue: View {
     @State private var showDialogs: [Bool] = []
     
     var dialogs: [(imageName: String, text: String, nextDialogButtonTitle: String)] = [
@@ -40,10 +40,12 @@ struct ContentView: View {
                 BattleView()
                 
             }
-            
-            
-            
-        
         }
+    }
+}
+
+struct OpeningDialogue_Previews: PreviewProvider {
+    static var previews: some View {
+        OpeningDialogue()
     }
 }

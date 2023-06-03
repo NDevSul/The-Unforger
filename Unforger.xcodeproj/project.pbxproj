@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0409B7E72A2B652200A6F1EA /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0409B7E62A2B652200A6F1EA /* Player.swift */; };
+		0409B7E92A2B86CE00A6F1EA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0409B7E82A2B86CE00A6F1EA /* ContentView.swift */; };
 		0411999E2A2040AB00628E84 /* UnforgerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0411999D2A2040AB00628E84 /* UnforgerApp.swift */; };
 		041199A02A2040AB00628E84 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0411999F2A2040AB00628E84 /* RegisterView.swift */; };
 		041199A22A2040AC00628E84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041199A12A2040AC00628E84 /* Assets.xcassets */; };
@@ -42,6 +43,7 @@
 
 /* Begin PBXFileReference section */
 		0409B7E62A2B652200A6F1EA /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		0409B7E82A2B86CE00A6F1EA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0411999A2A2040AB00628E84 /* Unforger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Unforger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0411999D2A2040AB00628E84 /* UnforgerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnforgerApp.swift; sourceTree = "<group>"; };
 		0411999F2A2040AB00628E84 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				0442BB992A28FC5600525AF8 /* RoleSelectionView.swift */,
 				0442BB9B2A28FCDB00525AF8 /* ProfileView.swift */,
 				0480F5F32A2B84370060E7E4 /* OpeningDialogue.swift */,
+				0409B7E82A2B86CE00A6F1EA /* ContentView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 				0442BB982A28FC1F00525AF8 /* NicknameView.swift in Sources */,
 				0409B7E72A2B652200A6F1EA /* Player.swift in Sources */,
 				0480F5F42A2B84370060E7E4 /* OpeningDialogue.swift in Sources */,
+				0409B7E92A2B86CE00A6F1EA /* ContentView.swift in Sources */,
 				0442BB9C2A28FCDB00525AF8 /* ProfileView.swift in Sources */,
 				0411999E2A2040AB00628E84 /* UnforgerApp.swift in Sources */,
 				0480F5F12A2B84200060E7E4 /* DialogView.swift in Sources */,

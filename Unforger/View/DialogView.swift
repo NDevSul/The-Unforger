@@ -45,6 +45,6 @@ struct DialogView: View {
 
 struct DialogView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        DialogView(imageName: "", text: "", buttonTitle: "", buttonAction: {})
     }
 }
