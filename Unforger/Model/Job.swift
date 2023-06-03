@@ -12,4 +12,5 @@ protocol Classable {
     var skills: [Skills] {  get }
     var idleAnimationCount: Int { get }
     var attackAnimationCount: Int { get }
+    var damageAnimationCount: Int { get }
 }

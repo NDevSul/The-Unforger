@@ -18,7 +18,7 @@ extension BattleView {
         @Published var opponentCurrentAnimCount = 1
         
         @Published var player: Classable = Mage()
-        @Published var opponent: Classable = Assasin()
+        @Published var opponent: Classable = Mage()
         
         // mendisable spam karena tidak boleh
         @Published var disableControl = false
@@ -70,7 +70,7 @@ extension BattleView {
             
             self.togglePlayerIdleAnimation(false) // matikan loop idle animasi
             self.playerCurrentAnim = "atk" // ganti ke animasi attack (hanya ada idle dan atk)
-            var attackTimer: Timer? // buat timer attack
+            var attackTimer: Timer?// buat timer attack
             
             // set timer attack dengan interval 0.1 detik per animasi
             attackTimer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { _ in
@@ -83,9 +83,30 @@ extension BattleView {
                     attackTimer = nil
                     
                     // kembalikan ke idle animation
-                    self.disableControl = false
                     self.playerCurrentAnim = "idle"
                     self.togglePlayerIdleAnimation(true)
+                    
+                    self.toggleOpponentIdleAnimation(false)
+                    self.opponentCurrentAnim = "dmg"
+                    var damageTimer: Timer?// timer oponent kena damage
+                    
+                    damageTimer = Timer.scheduledTimer(withTimeInterval: 0.2, repeats: true) { _ in
+                        
+                        // apakah animasi sudah selesai (1 - n jumlah animasi)
+                        if self.opponentCurrentAnimCount == self.player.attackAnimationCount {
+                            
+                            damageTimer!.invalidate() // matikan timer
+                            damageTimer = nil
+                            
+                            self.opponentCurrentAnim = "idle"
+                            self.disableControl = false
+                            self.toggleOpponentIdleAnimation(true)
+                        }else{
+                            self.opponentCurrentAnimCount += 1
+                        }
+                        
+                    }
+                    
                 } else {
                     
                     // habiskan attack animasi
@@ -95,5 +116,6 @@ extension BattleView {
             }
             
         }
+        
     }
 }
