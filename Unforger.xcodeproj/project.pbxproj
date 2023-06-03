@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0409B7E72A2B652200A6F1EA /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0409B7E62A2B652200A6F1EA /* Player.swift */; };
 		0411999E2A2040AB00628E84 /* UnforgerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0411999D2A2040AB00628E84 /* UnforgerApp.swift */; };
-		041199A02A2040AB00628E84 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0411999F2A2040AB00628E84 /* ContentView.swift */; };
+		041199A02A2040AB00628E84 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0411999F2A2040AB00628E84 /* RegisterView.swift */; };
 		041199A22A2040AC00628E84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041199A12A2040AC00628E84 /* Assets.xcassets */; };
 		041199A52A2040AC00628E84 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041199A42A2040AC00628E84 /* Preview Assets.xcassets */; };
 		041199AF2A2040AD00628E84 /* UnforgerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041199AE2A2040AD00628E84 /* UnforgerTests.swift */; };
@@ -38,9 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0409B7E62A2B652200A6F1EA /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		0411999A2A2040AB00628E84 /* Unforger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Unforger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0411999D2A2040AB00628E84 /* UnforgerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnforgerApp.swift; sourceTree = "<group>"; };
-		0411999F2A2040AB00628E84 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0411999F2A2040AB00628E84 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		041199A12A2040AC00628E84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		041199A42A2040AC00628E84 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		041199AA2A2040AD00628E84 /* UnforgerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnforgerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,6 +81,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0409B7E32A2B64B000A6F1EA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0409B7E62A2B652200A6F1EA /* Player.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0409B7E42A2B64BB00A6F1EA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0409B7E52A2B64C200A6F1EA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0411999F2A2040AB00628E84 /* RegisterView.swift */,
+				0442BB972A28FC1F00525AF8 /* NicknameView.swift */,
+				0442BB992A28FC5600525AF8 /* RoleSelectionView.swift */,
+				0442BB9B2A28FCDB00525AF8 /* ProfileView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		041199912A2040AB00628E84 = {
 			isa = PBXGroup;
 			children = (
@@ -102,14 +130,13 @@
 		0411999C2A2040AB00628E84 /* Unforger */ = {
 			isa = PBXGroup;
 			children = (
+				0409B7E52A2B64C200A6F1EA /* View */,
+				0409B7E42A2B64BB00A6F1EA /* ViewModel */,
+				0409B7E32A2B64B000A6F1EA /* Model */,
 				0411999D2A2040AB00628E84 /* UnforgerApp.swift */,
-				0411999F2A2040AB00628E84 /* ContentView.swift */,
 				041199C92A28749800628E84 /* TESTES.swift */,
 				041199A12A2040AC00628E84 /* Assets.xcassets */,
 				041199A32A2040AC00628E84 /* Preview Content */,
-				0442BB972A28FC1F00525AF8 /* NicknameView.swift */,
-				0442BB992A28FC5600525AF8 /* RoleSelectionView.swift */,
-				0442BB9B2A28FCDB00525AF8 /* ProfileView.swift */,
 			);
 			path = Unforger;
 			sourceTree = "<group>";
@@ -269,10 +296,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				041199A02A2040AB00628E84 /* ContentView.swift in Sources */,
+				041199A02A2040AB00628E84 /* RegisterView.swift in Sources */,
 				0442BB9A2A28FC5600525AF8 /* RoleSelectionView.swift in Sources */,
 				041199CA2A28749800628E84 /* TESTES.swift in Sources */,
 				0442BB982A28FC1F00525AF8 /* NicknameView.swift in Sources */,
+				0409B7E72A2B652200A6F1EA /* Player.swift in Sources */,
 				0442BB9C2A28FCDB00525AF8 /* ProfileView.swift in Sources */,
 				0411999E2A2040AB00628E84 /* UnforgerApp.swift in Sources */,
 			);
