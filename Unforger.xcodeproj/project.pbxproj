@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0409B7E72A2B652200A6F1EA /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0409B7E62A2B652200A6F1EA /* Player.swift */; };
 		0409B7E92A2B86CE00A6F1EA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0409B7E82A2B86CE00A6F1EA /* ContentView.swift */; };
 		0411999E2A2040AB00628E84 /* UnforgerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0411999D2A2040AB00628E84 /* UnforgerApp.swift */; };
 		041199A02A2040AB00628E84 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0411999F2A2040AB00628E84 /* RegisterView.swift */; };
@@ -19,14 +18,15 @@
 		0442BB982A28FC1F00525AF8 /* NicknameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0442BB972A28FC1F00525AF8 /* NicknameView.swift */; };
 		0442BB9A2A28FC5600525AF8 /* RoleSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0442BB992A28FC5600525AF8 /* RoleSelectionView.swift */; };
 		0442BB9C2A28FCDB00525AF8 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0442BB9B2A28FCDB00525AF8 /* ProfileView.swift */; };
-		0480F5F22A2B84200060E7E4 /* BattleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0480F5A22A2B83F10060E7E4 /* BattleView.swift */; };
 		0480F5F42A2B84370060E7E4 /* OpeningDialogue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0480F5F32A2B84370060E7E4 /* OpeningDialogue.swift */; };
-		0480F5F62A2B93A90060E7E4 /* Skills.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0480F5F52A2B93A90060E7E4 /* Skills.swift */; };
 		0480F5F82A2B966C0060E7E4 /* OpeningDialogueCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0480F5F72A2B966C0060E7E4 /* OpeningDialogueCard.swift */; };
-		0480F6012A2B98DA0060E7E4 /* Bitcheese.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0480F5FD2A2B98DA0060E7E4 /* Bitcheese.otf */; };
-		0480F6022A2B98DA0060E7E4 /* More Info.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0480F5FE2A2B98DA0060E7E4 /* More Info.txt */; };
-		0480F6032A2B98DA0060E7E4 /* Bitcheese.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0480F5FF2A2B98DA0060E7E4 /* Bitcheese.ttf */; };
-		0480F6062A2B99490060E7E4 /* FontsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0480F6052A2B99490060E7E4 /* FontsManager.swift */; };
+		0480F6092A2BC1450060E7E4 /* BattleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0480F6082A2BC1450060E7E4 /* BattleViewModel.swift */; };
+		0480F60B2A2BC1D50060E7E4 /* BattleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0480F60A2A2BC1D50060E7E4 /* BattleView.swift */; };
+		0480F6132A2BC2060060E7E4 /* Assasin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0480F60E2A2BC2060060E7E4 /* Assasin.swift */; };
+		0480F6142A2BC2060060E7E4 /* Skills.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0480F60F2A2BC2060060E7E4 /* Skills.swift */; };
+		0480F6162A2BC2060060E7E4 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0480F6112A2BC2060060E7E4 /* Player.swift */; };
+		0480F6172A2BC2060060E7E4 /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0480F6122A2BC2060060E7E4 /* Job.swift */; };
+		0480F6192A2BC4050060E7E4 /* Mage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0480F6182A2BC4050060E7E4 /* Mage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +47,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0409B7E62A2B652200A6F1EA /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		0409B7E82A2B86CE00A6F1EA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0411999A2A2040AB00628E84 /* Unforger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Unforger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0411999D2A2040AB00628E84 /* UnforgerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnforgerApp.swift; sourceTree = "<group>"; };
@@ -62,14 +61,15 @@
 		0442BB972A28FC1F00525AF8 /* NicknameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NicknameView.swift; sourceTree = "<group>"; };
 		0442BB992A28FC5600525AF8 /* RoleSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoleSelectionView.swift; sourceTree = "<group>"; };
 		0442BB9B2A28FCDB00525AF8 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
-		0480F5A22A2B83F10060E7E4 /* BattleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BattleView.swift; sourceTree = "<group>"; };
 		0480F5F32A2B84370060E7E4 /* OpeningDialogue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpeningDialogue.swift; sourceTree = "<group>"; };
-		0480F5F52A2B93A90060E7E4 /* Skills.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skills.swift; sourceTree = "<group>"; };
 		0480F5F72A2B966C0060E7E4 /* OpeningDialogueCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpeningDialogueCard.swift; sourceTree = "<group>"; };
-		0480F5FD2A2B98DA0060E7E4 /* Bitcheese.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bitcheese.otf; sourceTree = "<group>"; };
-		0480F5FE2A2B98DA0060E7E4 /* More Info.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "More Info.txt"; sourceTree = "<group>"; };
-		0480F5FF2A2B98DA0060E7E4 /* Bitcheese.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bitcheese.ttf; sourceTree = "<group>"; };
-		0480F6052A2B99490060E7E4 /* FontsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontsManager.swift; sourceTree = "<group>"; };
+		0480F6082A2BC1450060E7E4 /* BattleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleViewModel.swift; sourceTree = "<group>"; };
+		0480F60A2A2BC1D50060E7E4 /* BattleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BattleView.swift; sourceTree = "<group>"; };
+		0480F60E2A2BC2060060E7E4 /* Assasin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assasin.swift; sourceTree = "<group>"; };
+		0480F60F2A2BC2060060E7E4 /* Skills.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Skills.swift; sourceTree = "<group>"; };
+		0480F6112A2BC2060060E7E4 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		0480F6122A2BC2060060E7E4 /* Job.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
+		0480F6182A2BC4050060E7E4 /* Mage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Mage.swift; path = Unforger/ViewModel/Mage.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,18 +97,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0409B7E32A2B64B000A6F1EA /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				0409B7E62A2B652200A6F1EA /* Player.swift */,
-				0480F5F52A2B93A90060E7E4 /* Skills.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		0409B7E42A2B64BB00A6F1EA /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				0480F6082A2BC1450060E7E4 /* BattleViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -116,8 +108,8 @@
 		0409B7E52A2B64C200A6F1EA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0480F60A2A2BC1D50060E7E4 /* BattleView.swift */,
 				0411999F2A2040AB00628E84 /* RegisterView.swift */,
-				0480F5A22A2B83F10060E7E4 /* BattleView.swift */,
 				0442BB972A28FC1F00525AF8 /* NicknameView.swift */,
 				0442BB992A28FC5600525AF8 /* RoleSelectionView.swift */,
 				0442BB9B2A28FCDB00525AF8 /* ProfileView.swift */,
@@ -151,10 +143,9 @@
 		0411999C2A2040AB00628E84 /* Unforger */ = {
 			isa = PBXGroup;
 			children = (
-				0480F5FC2A2B98BD0060E7E4 /* Fonts */,
+				0480F60C2A2BC2060060E7E4 /* Model */,
 				0409B7E52A2B64C200A6F1EA /* View */,
 				0409B7E42A2B64BB00A6F1EA /* ViewModel */,
-				0409B7E32A2B64B000A6F1EA /* Model */,
 				0411999D2A2040AB00628E84 /* UnforgerApp.swift */,
 				041199A12A2040AC00628E84 /* Assets.xcassets */,
 				041199A32A2040AC00628E84 /* Preview Content */,
@@ -187,15 +178,24 @@
 			path = UnforgerUITests;
 			sourceTree = "<group>";
 		};
-		0480F5FC2A2B98BD0060E7E4 /* Fonts */ = {
+		0480F60C2A2BC2060060E7E4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				0480F5FD2A2B98DA0060E7E4 /* Bitcheese.otf */,
-				0480F5FF2A2B98DA0060E7E4 /* Bitcheese.ttf */,
-				0480F5FE2A2B98DA0060E7E4 /* More Info.txt */,
-				0480F6052A2B99490060E7E4 /* FontsManager.swift */,
+				0480F60D2A2BC2060060E7E4 /* PlayerClass */,
+				0480F60F2A2BC2060060E7E4 /* Skills.swift */,
+				0480F6112A2BC2060060E7E4 /* Player.swift */,
+				0480F6122A2BC2060060E7E4 /* Job.swift */,
 			);
-			path = Fonts;
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0480F60D2A2BC2060060E7E4 /* PlayerClass */ = {
+			isa = PBXGroup;
+			children = (
+				0480F60E2A2BC2060060E7E4 /* Assasin.swift */,
+				0480F6182A2BC4050060E7E4 /* Mage.swift */,
+			);
+			path = PlayerClass;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,11 +302,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0480F6012A2B98DA0060E7E4 /* Bitcheese.otf in Resources */,
 				041199A52A2040AC00628E84 /* Preview Assets.xcassets in Resources */,
-				0480F6022A2B98DA0060E7E4 /* More Info.txt in Resources */,
 				041199A22A2040AC00628E84 /* Assets.xcassets in Resources */,
-				0480F6032A2B98DA0060E7E4 /* Bitcheese.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,17 +328,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0480F6192A2BC4050060E7E4 /* Mage.swift in Sources */,
 				041199A02A2040AB00628E84 /* RegisterView.swift in Sources */,
+				0480F6142A2BC2060060E7E4 /* Skills.swift in Sources */,
+				0480F6132A2BC2060060E7E4 /* Assasin.swift in Sources */,
 				0442BB9A2A28FC5600525AF8 /* RoleSelectionView.swift in Sources */,
-				0480F5F22A2B84200060E7E4 /* BattleView.swift in Sources */,
+				0480F6172A2BC2060060E7E4 /* Job.swift in Sources */,
+				0480F6162A2BC2060060E7E4 /* Player.swift in Sources */,
 				0442BB982A28FC1F00525AF8 /* NicknameView.swift in Sources */,
-				0409B7E72A2B652200A6F1EA /* Player.swift in Sources */,
 				0480F5F42A2B84370060E7E4 /* OpeningDialogue.swift in Sources */,
-				0480F6062A2B99490060E7E4 /* FontsManager.swift in Sources */,
 				0480F5F82A2B966C0060E7E4 /* OpeningDialogueCard.swift in Sources */,
 				0409B7E92A2B86CE00A6F1EA /* ContentView.swift in Sources */,
-				0480F5F62A2B93A90060E7E4 /* Skills.swift in Sources */,
 				0442BB9C2A28FCDB00525AF8 /* ProfileView.swift in Sources */,
+				0480F6092A2BC1450060E7E4 /* BattleViewModel.swift in Sources */,
+				0480F60B2A2BC1D50060E7E4 /* BattleView.swift in Sources */,
 				0411999E2A2040AB00628E84 /* UnforgerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
