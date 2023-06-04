@@ -13,4 +13,5 @@ protocol Classable {
     var idleAnimationCount: Int { get }
     var attackAnimationCount: Int { get }
     var damageAnimationCount: Int { get }
+    var dyingAnimationCount: Int { get }
 }

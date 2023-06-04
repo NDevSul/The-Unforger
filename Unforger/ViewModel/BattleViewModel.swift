@@ -23,7 +23,7 @@ extension BattleView {
         @Published var opponentCurrentAnim = "idle"
         @Published var opponentCurrentAnimCount = 1
         
-        @Published var player: Classable = Assasin()
+        @Published var player: Classable = Fighter()
         @Published var opponent: Classable = Mage()
         
         // mendisable spam karena tidak boleh
@@ -195,7 +195,7 @@ extension BattleView {
             dyingTimer = Timer.scheduledTimer(withTimeInterval: 0.3, repeats: true) { _ in
                 
                 // apakah animasi sudah selesai (1 - n jumlah animasi)
-                if self.playerCurrentAnimCount == self.dyingAnimationCount {
+                if self.playerCurrentAnimCount == self.player.dyingAnimationCount {
                     
                     // matikan timer
                     dyingTimer!.invalidate()
