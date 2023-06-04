@@ -29,9 +29,9 @@ struct ContentView: View {
                     }
                     .padding(.trailing, 8)
                     .background(
-                        NavigationLink(destination: ProfileView(), isActive: $profile) {
-                            EmptyView()
-                        }
+//                        NavigationLink(destination: ProfileView(), isActive: $profile) {
+//                            EmptyView()
+//                        }
                     )
                     .buttonStyle(PlainButtonStyle())
                     
@@ -62,7 +62,7 @@ struct ContentView: View {
                         Button(action: {
                             asu.toggle()
                         }) {
-                            CardDungeon2(title: "Ware Wolf", y: 100)
+                            BannnerWolf(title: "Ware Wolf", y: 100)
                                 .frame(width: 160, height: 140)
                                 .offset(x: 0, y: 0)
                             
@@ -70,7 +70,7 @@ struct ContentView: View {
                         Button(action: {
                             blok.toggle()
                         }) {
-                            CardDungeon3(title: "Dying", y: 150)
+                            BannerDying(title: "Dying", y: 150)
                                 .frame(width: 160, height: 130)
                                 .offset(x: 0, y: 15)
                             
@@ -80,7 +80,7 @@ struct ContentView: View {
                 
             }
             .sheet(isPresented: $profile) {
-                ProfileView()
+//                ProfileView()
             }
             .sheet(isPresented: $show) {
                 BottomSheetCastle(show: $show)

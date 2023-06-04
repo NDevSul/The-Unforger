@@ -36,7 +36,7 @@ struct BottomSheetCastle: View {
     var content: some View {
         GeometryReader { proxy in
             VStack{
-                DeadCastelView()
+                CastleView()
                
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)

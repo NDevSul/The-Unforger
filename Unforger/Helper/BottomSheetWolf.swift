@@ -36,7 +36,7 @@ struct BottomSheetWolf: View {
     var content: some View {
         GeometryReader { proxy in
             VStack{
-                WareWolfView()
+                WolfView()
                
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)

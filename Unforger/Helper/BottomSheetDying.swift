@@ -36,7 +36,7 @@ struct BottomSheetDying: View {
     var content: some View {
         GeometryReader { proxy in
             VStack{
-                DyingView()
+                Dyingview()
                
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
