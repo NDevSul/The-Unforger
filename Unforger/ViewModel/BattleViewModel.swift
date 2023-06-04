@@ -17,7 +17,7 @@ extension BattleView {
         @Published var opponentCurrentAnim = "idle"
         @Published var opponentCurrentAnimCount = 1
         
-        @Published var player: Classable = Mage()
+        @Published var player: Classable = Assasin()
         @Published var opponent: Classable = Mage()
         
         // mendisable spam karena tidak boleh
@@ -93,14 +93,17 @@ extension BattleView {
                     damageTimer = Timer.scheduledTimer(withTimeInterval: 0.2, repeats: true) { _ in
                         
                         // apakah animasi sudah selesai (1 - n jumlah animasi)
-                        if self.opponentCurrentAnimCount == self.player.attackAnimationCount {
+                        if self.opponentCurrentAnimCount == self.opponent.damageAnimationCount {
                             
                             damageTimer!.invalidate() // matikan timer
                             damageTimer = nil
                             
                             self.opponentCurrentAnim = "idle"
-                            self.disableControl = false
                             self.toggleOpponentIdleAnimation(true)
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 1.1) {
+                                self.contohAttackOpponent()
+                            }
+                            
                         }else{
                             self.opponentCurrentAnimCount += 1
                         }
@@ -116,6 +119,60 @@ extension BattleView {
             }
             
         }
+        
+        func contohAttackOpponent() -> Void {
+
+            self.toggleOpponentIdleAnimation(false) // matikan loop idle animasi
+            self.opponentCurrentAnim = "atk" // ganti ke animasi attack (hanya ada idle dan atk)
+            var attackTimer: Timer?// buat timer attack
+            
+            // set timer attack dengan interval 0.1 detik per animasi
+            attackTimer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { _ in
+                
+                // apakah animasi sudah selesai (1 - n jumlah animasi)
+                if self.opponentCurrentAnimCount == self.opponent.attackAnimationCount {
+                    
+                    // matikan timer
+                    attackTimer!.invalidate()
+                    attackTimer = nil
+                    
+                    // kembalikan ke idle animation
+                    self.opponentCurrentAnim = "idle"
+                    self.toggleOpponentIdleAnimation(true)
+                    
+                    self.togglePlayerIdleAnimation(false)
+                    self.playerCurrentAnim = "dmg"
+                    var damageTimer: Timer?// timer oponent kena damage
+                    
+                    damageTimer = Timer.scheduledTimer(withTimeInterval: 0.2, repeats: true) { _ in
+                        
+                        // apakah animasi sudah selesai (1 - n jumlah animasi)
+                        if self.playerCurrentAnimCount == self.player.damageAnimationCount {
+                            
+                            damageTimer!.invalidate() // matikan timer
+                            damageTimer = nil
+                            
+                            self.playerCurrentAnim = "idle"
+                            self.disableControl = false
+                            self.togglePlayerIdleAnimation(true)
+                        }else{
+                            self.playerCurrentAnimCount += 1
+                        }
+                        
+                    }
+                    
+                } else {
+                    
+                    // habiskan attack animasi
+                    self.opponentCurrentAnimCount += 1
+                    
+                }
+            }
+            
+        }
+        
+        
+        
         
     }
 }

@@ -70,75 +70,77 @@ struct BattleView: View {
                 
                 //buttons
                 VStack(spacing: 10) {
-                    
-                    Button(action: {
-                        vm.contohAttackPlayer()
-                    }) {
-                        Text("Skill 1")
-                            .foregroundColor(.black)
-                            .padding()
-                            .frame(maxWidth: .infinity)
-                            .background(Color.customBackground)
-                            .cornerRadius(10)
-                            .bold()
+                    if vm.disableControl{
+                        Text("Nunggu woi")
+                    }else{
+                        Button(action: {
+                            vm.contohAttackPlayer()
+                        }) {
+                            Text("Skill 1")
+                                .foregroundColor(.black)
+                                .padding()
+                                .frame(maxWidth: .infinity)
+                                .background(Color.customBackground)
+                                .cornerRadius(10)
+                                .bold()
+                        }
+                        Button(action: {
+                        }) {
+                            Text("Skill 2")
+                                .foregroundColor(.black)
+                                .padding()
+                                .frame(maxWidth: .infinity)
+                                .background(Color.customBackground)
+                                .cornerRadius(10)
+                                .bold()
+                        }
+                        
+                        Button(action: {
+                        }) {
+                            Text("Skill 3")
+                                .foregroundColor(.black)
+                                .padding()
+                                .frame(maxWidth: .infinity)
+                                .background(Color.customBackground)
+                                .cornerRadius(10)
+                                .bold()
+                        }
+                        
+                        Button(action: {
+                        }) {
+                            Text("Regenerate Health")
+                                .foregroundColor(.black)
+                                .padding()
+                                .frame(maxWidth: .infinity)
+                                .background(Color.customBackground)
+                                .cornerRadius(10)
+                                .bold()
+                        }
+                        
+                        Button(action: {
+                        }) {
+                            Text("Regenerate Mana")
+                                .foregroundColor(.black)
+                                .padding()
+                                .frame(maxWidth: .infinity)
+                                .background(Color.customBackground)
+                                .cornerRadius(10)
+                                .bold()
+                        }
+                        
+                        Button(action: {
+                        }) {
+                            Text("Surrender")
+                                .foregroundColor(.black)
+                                .padding()
+                                .frame(maxWidth: .infinity)
+                                .background(Color.red)
+                                .cornerRadius(10)
+                                .bold()
+                        }
+                        
                     }
-                    Button(action: {
-                    }) {
-                        Text("Skill 2")
-                            .foregroundColor(.black)
-                            .padding()
-                            .frame(maxWidth: .infinity)
-                            .background(Color.customBackground)
-                            .cornerRadius(10)
-                            .bold()
-                    }
-                    
-                    Button(action: {
-                    }) {
-                        Text("Skill 3")
-                            .foregroundColor(.black)
-                            .padding()
-                            .frame(maxWidth: .infinity)
-                            .background(Color.customBackground)
-                            .cornerRadius(10)
-                            .bold()
-                    }
-                    
-                    Button(action: {
-                    }) {
-                        Text("Regenerate Health")
-                            .foregroundColor(.black)
-                            .padding()
-                            .frame(maxWidth: .infinity)
-                            .background(Color.customBackground)
-                            .cornerRadius(10)
-                            .bold()
-                    }
-                    
-                    Button(action: {
-                    }) {
-                        Text("Regenerate Mana")
-                            .foregroundColor(.black)
-                            .padding()
-                            .frame(maxWidth: .infinity)
-                            .background(Color.customBackground)
-                            .cornerRadius(10)
-                            .bold()
-                    }
-                    
-                    Button(action: {
-                    }) {
-                        Text("Surrender")
-                            .foregroundColor(.black)
-                            .padding()
-                            .frame(maxWidth: .infinity)
-                            .background(Color.red)
-                            .cornerRadius(10)
-                            .bold()
-                    }
-                    
                 }
-                .disabled(vm.disableControl)
                 .frame(maxWidth: .infinity)
                 .padding()
                 .background(Color.gray.opacity(0.2))
