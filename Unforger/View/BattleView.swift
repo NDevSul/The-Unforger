@@ -10,6 +10,7 @@ struct BattleView: View {
     
     @StateObject var vm: ViewModel = ViewModel()
     
+    let musicPlayer = MusicPlayer()
     var body: some View {
         VStack {
             VStack {
@@ -148,7 +149,12 @@ struct BattleView: View {
                 .padding()
             }
         }
-        
+        .onAppear {
+            musicPlayer.play()
+        }
+        .onDisappear {
+            musicPlayer.stop()
+        }
         Spacer()
         
     }

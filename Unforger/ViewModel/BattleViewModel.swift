@@ -144,7 +144,7 @@ extension BattleView {
                     self.playerCurrentAnim = "dmg"
                     var damageTimer: Timer?// timer oponent kena damage
                     
-                    damageTimer = Timer.scheduledTimer(withTimeInterval: 0.2, repeats: true) { _ in
+                    damageTimer = Timer.scheduledTimer(withTimeInterval: 0.3, repeats: true) { _ in
                         
                         // apakah animasi sudah selesai (1 - n jumlah animasi)
                         if self.playerCurrentAnimCount == self.player.damageAnimationCount {
@@ -176,3 +176,15 @@ extension BattleView {
         
     }
 }
+
+
+//if self.player.health <= 0 {
+//
+//    self.togglePlayerIdleAnimation(false) // matikan loop idle animasi
+//    self.playerCurrentAnim = "die" // ganti ke animasi attack (hanya ada idle dan atk)
+//    var dyingTimer: Timer?
+//    dyingTimer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { _ in
+//        dyingTimer!.invalidate()
+//        dyingTimer = nil
+//    }
+//}

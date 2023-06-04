@@ -11,7 +11,7 @@ struct Assasin: Classable {
     var damageAnimationCount: Int = 3
     var idleAnimationCount: Int = 7
     var attackAnimationCount: Int = 4
-    
+    var dyingAnimationCount: Int = 6
     var type: String = "Assasin"
     
     var skills: [Skills] = [

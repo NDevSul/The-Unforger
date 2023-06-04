@@ -43,6 +43,8 @@
 		0480F6162A2BC2060060E7E4 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0480F6112A2BC2060060E7E4 /* Player.swift */; };
 		0480F6172A2BC2060060E7E4 /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0480F6122A2BC2060060E7E4 /* Job.swift */; };
 		0480F6192A2BC4050060E7E4 /* Mage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0480F6182A2BC4050060E7E4 /* Mage.swift */; };
+		0480F6342A2C8FBC0060E7E4 /* MusicPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0480F6332A2C8FBC0060E7E4 /* MusicPlayer.swift */; };
+		0480F6362A2C8FF90060E7E4 /* lagudegdegan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0480F6352A2C8FF90060E7E4 /* lagudegdegan.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +104,8 @@
 		0480F6112A2BC2060060E7E4 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		0480F6122A2BC2060060E7E4 /* Job.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
 		0480F6182A2BC4050060E7E4 /* Mage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Mage.swift; path = Unforger/ViewModel/Mage.swift; sourceTree = SOURCE_ROOT; };
+		0480F6332A2C8FBC0060E7E4 /* MusicPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayer.swift; sourceTree = "<group>"; };
+		0480F6352A2C8FF90060E7E4 /* lagudegdegan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lagudegdegan.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,6 +224,7 @@
 		0411999C2A2040AB00628E84 /* Unforger */ = {
 			isa = PBXGroup;
 			children = (
+				0480F6302A2C8F7F0060E7E4 /* Music */,
 				04099E682A2C6D7C00CABD06 /* SheetView */,
 				04099E4F2A2C6B1100CABD06 /* Helper */,
 				0480F60C2A2BC2060060E7E4 /* Model */,
@@ -276,6 +281,15 @@
 				0480F6182A2BC4050060E7E4 /* Mage.swift */,
 			);
 			path = PlayerClass;
+			sourceTree = "<group>";
+		};
+		0480F6302A2C8F7F0060E7E4 /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				0480F6352A2C8FF90060E7E4 /* lagudegdegan.mp3 */,
+				0480F6332A2C8FBC0060E7E4 /* MusicPlayer.swift */,
+			);
+			path = Music;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -382,6 +396,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0480F6362A2C8FF90060E7E4 /* lagudegdegan.mp3 in Resources */,
 				041199A52A2040AC00628E84 /* Preview Assets.xcassets in Resources */,
 				041199A22A2040AC00628E84 /* Assets.xcassets in Resources */,
 			);
@@ -434,6 +449,7 @@
 				04099E6E2A2C6DFB00CABD06 /* Dyingview.swift in Sources */,
 				0409B7F32A2C80E800A6F1EA /* RoleViewModel.swift in Sources */,
 				0480F6092A2BC1450060E7E4 /* BattleViewModel.swift in Sources */,
+				0480F6342A2C8FBC0060E7E4 /* MusicPlayer.swift in Sources */,
 				04099E552A2C6BD000CABD06 /* BottomSheetDying.swift in Sources */,
 				0409B7F12A2C735000A6F1EA /* Enemy.swift in Sources */,
 				0480F60B2A2BC1D50060E7E4 /* BattleView.swift in Sources */,
