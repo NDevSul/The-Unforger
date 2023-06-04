@@ -2,7 +2,7 @@
 //  Assasin.swift
 //  Unforger
 //
-//  Created by Rama Adi Nugraha on 04/06/23.
+//  Created by MacBook Pro on 04/06/23.
 //
 
 import Foundation

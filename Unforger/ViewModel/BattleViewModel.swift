@@ -127,7 +127,7 @@ extension BattleView {
         }
         
         func contohAttackOpponent() -> Void {
-
+            
             self.toggleOpponentIdleAnimation(false) // matikan loop idle animasi
             self.opponentCurrentAnim = "atk" // ganti ke animasi attack (hanya ada idle dan atk)
             var attackTimer: Timer?// buat timer attack
@@ -142,8 +142,6 @@ extension BattleView {
                     attackTimer!.invalidate()
                     attackTimer = nil
                     
-                    
-                    
                     self.character.playerHP -= 50
                     
                     if self.character.playerHP <= 0 {
@@ -156,27 +154,23 @@ extension BattleView {
                         
                         self.togglePlayerIdleAnimation(false)
                         self.playerCurrentAnim = "dmg"
-                    }
-                    
-                    
-                    
-                    var damageTimer: Timer?// timer oponent kena damage
-                    
-                    damageTimer = Timer.scheduledTimer(withTimeInterval: 0.3, repeats: true) { _ in
+                        var damageTimer: Timer?// timer oponent kena damage
                         
-                        // apakah animasi sudah selesai (1 - n jumlah animasi)
-                        if self.playerCurrentAnimCount == self.player.damageAnimationCount {
+                        damageTimer = Timer.scheduledTimer(withTimeInterval: 0.3, repeats: true) { _ in
                             
-                            damageTimer!.invalidate() // matikan timer
-                            damageTimer = nil
-                            
-                            self.playerCurrentAnim = "idle"
-                            self.disableControl = false
-                            self.togglePlayerIdleAnimation(true)
-                        }else{
-                            self.playerCurrentAnimCount += 1
+                            // apakah animasi sudah selesai (1 - n jumlah animasi)
+                            if self.playerCurrentAnimCount == self.player.damageAnimationCount {
+                                
+                                damageTimer!.invalidate() // matikan timer
+                                damageTimer = nil
+                                
+                                self.playerCurrentAnim = "idle"
+                                self.disableControl = false
+                                self.togglePlayerIdleAnimation(true)
+                            }else{
+                                self.playerCurrentAnimCount += 1
+                            }
                         }
-                        
                     }
                     
                 } else {
@@ -190,19 +184,38 @@ extension BattleView {
         }
         
         func contohMatiPlayer() -> Void {
-                self.togglePlayerIdleAnimation(false) // matikan loop idle animasi
-                self.playerCurrentAnim = "die" // ganti ke animasi attack (hanya ada idle dan atk)
-                var dyingTimer: Timer?
-                dyingTimer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { _ in
+            
+            self.disableControl = true
+            
+            self.togglePlayerIdleAnimation(false) // matikan loop idle animasi
+            self.playerCurrentAnim = "die" // ganti ke animasi attack (hanya ada idle dan atk)
+            var dyingTimer: Timer?// buat timer attack
+            
+            // set timer attack dengan interval 0.1 detik per animasi
+            dyingTimer = Timer.scheduledTimer(withTimeInterval: 0.3, repeats: true) { _ in
+                
+                // apakah animasi sudah selesai (1 - n jumlah animasi)
+                if self.playerCurrentAnimCount == self.dyingAnimationCount {
+                    
+                    // matikan timer
                     dyingTimer!.invalidate()
                     dyingTimer = nil
+                    
+                } else {
+                    
+                    // habiskan attack animasi
+                    self.playerCurrentAnimCount += 1
+                    
                 }
+            }
             
         }
         
         
     }
 }
+
+
 
 
 
