@@ -7,8 +7,9 @@
 import SwiftUI
 
 struct BattleView: View {
+
+    @ObservedObject var vm: ViewModel
     
-    @StateObject var vm: ViewModel = ViewModel()
     
     let musicPlayer = MusicPlayer()
     var body: some View {
@@ -49,7 +50,7 @@ struct BattleView: View {
                             .padding()
                             .background(Color.white)
                         
-                        Text("Health : 100\nMana : 100")
+                        Text("Health : \(vm.character.playerHP)\nMana : 100")
                             .font(.system(size: 24, weight: .bold, design: .default))
                             .foregroundColor(.black)
                             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)

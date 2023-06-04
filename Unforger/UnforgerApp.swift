@@ -12,7 +12,8 @@ struct UnforgerApp: App {
     var body: some Scene {
         WindowGroup {
             let player = Player(nickname: "", selectedRole: "", isShowingProfile: false, playerAttack: 10, playerHP: 100, playerMP: 50)
-            RegisterView(player: player)
+//            RegisterView(player: player)
+            BattleView(vm: BattleView.ViewModel(character: player))
         }
     }
 }

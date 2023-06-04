@@ -13,7 +13,7 @@ extension BattleView {
         
         @Published var character: Player
         init(character: Player) {
-            self.player = player
+            self.character = character
         }
         
         private let animSpeed = 0.2
@@ -104,6 +104,8 @@ extension BattleView {
                             damageTimer!.invalidate() // matikan timer
                             damageTimer = nil
                             
+                            self.character.playerHP -= 10
+                            
                             self.opponentCurrentAnim = "idle"
                             self.toggleOpponentIdleAnimation(true)
                             DispatchQueue.main.asyncAfter(deadline: .now() + 1.1) {
@@ -177,20 +179,22 @@ extension BattleView {
             
         }
         
-        
+        func contohMatiOpponent() -> Void {
+            if character.playerHP <= 0 {
+
+                self.togglePlayerIdleAnimation(false) // matikan loop idle animasi
+                self.playerCurrentAnim = "die" // ganti ke animasi attack (hanya ada idle dan atk)
+                var dyingTimer: Timer?
+                dyingTimer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { _ in
+                    dyingTimer!.invalidate()
+                    dyingTimer = nil
+                }
+            }
+        }
         
         
     }
 }
 
 
-//if self.player.health <= 0 {
-//
-//    self.togglePlayerIdleAnimation(false) // matikan loop idle animasi
-//    self.playerCurrentAnim = "die" // ganti ke animasi attack (hanya ada idle dan atk)
-//    var dyingTimer: Timer?
-//    dyingTimer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { _ in
-//        dyingTimer!.invalidate()
-//        dyingTimer = nil
-//    }
-//}
+

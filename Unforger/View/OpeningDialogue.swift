@@ -37,7 +37,7 @@ struct OpeningDialogue: View {
                 }
             }else{
                 
-                BattleView()
+//                BattleView(vm: )
                 
             }
         }

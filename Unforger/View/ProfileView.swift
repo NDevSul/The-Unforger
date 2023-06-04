@@ -29,7 +29,7 @@ struct ProfileView: View {
                             .font(.title)
                             .fontWeight(.bold)
                             .offset(x:35, y: -40)
-                        Text("You have \(selectedRole) Role")
+                        Text("You role is \(selectedRole)")
                             .font(.system(size: 15))
                             .fontWeight(.light)
                             .foregroundColor(.gray)
