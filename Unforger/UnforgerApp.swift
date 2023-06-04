@@ -11,7 +11,8 @@ import SwiftUI
 struct UnforgerApp: App {
     var body: some Scene {
         WindowGroup {
-            RegisterView() //balikin ke splashscreen / registerview after testing
+            let player = Player(nickname: "", selectedRole: "", isShowingProfile: false, playerAttack: 10, playerHP: 100, playerMP: 50)
+            RegisterView(player: player)
         }
     }
 }

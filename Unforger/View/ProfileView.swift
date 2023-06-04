@@ -9,7 +9,11 @@ import SwiftUI
 
 struct ProfileView: View {
     var nickname: String
-    var selectedRole: String?
+    var selectedRole: String
+    var attack: Int
+    var HP: Int
+    var MP: Int
+
     
     var body: some View {
         VStack {
@@ -20,6 +24,7 @@ struct ProfileView: View {
             
             if selectedRole == "Mage" {
                 Image("mage_role")
+                
             } else if selectedRole == "Assassin" {
                 Image("assassin_role")
             } else {
@@ -32,15 +37,23 @@ struct ProfileView: View {
             Text("Nickname: \(nickname)")
                 .font(.headline)
             
-            if let role = selectedRole {
-                            Text("Role: \(role)")
-                                .font(.headline)
-                        }
+            
+            Text("Attack: \(attack)")
+                .font(.headline)
+            
+            
+            Text("HP: \(HP)")
+                .font(.headline)
+            
+            Text("MP: \(MP)")
+                .font(.headline)
+            
+            Text("Role: \(selectedRole)")
+                .font(.headline)
             
 //            Text("Role: \(selectedRole)")
 //                .font(.headline)
             
-            Spacer()
         }
     }
 }

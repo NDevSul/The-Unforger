@@ -7,7 +7,15 @@
 import SwiftUI
 
 struct RegisterView: View {
-    @State private var playerModel = Player(nickname: "", isShowingProfile: false)
+    
+    @StateObject var playerViewModel: PlayerViewModel
+
+    init(player: Player) {
+        let playerViewModel = PlayerViewModel(player: player)
+        _playerViewModel = StateObject(wrappedValue: playerViewModel)
+    }
+    
+//   @Published var playerModel = Player(nickname: "", selectedRole: nil, isShowingProfile: false, playerAttack: 10, playerHP: 100, playerMP: 50)
     
     var body: some View {
         NavigationView {
@@ -21,15 +29,15 @@ struct RegisterView: View {
                         .aspectRatio(contentMode: .fill)
                         .frame(height: 150)
                     
-                    if !playerModel.isShowingProfile {
-                        NicknameView(nickname: $playerModel.nickname, nextAction: { playerModel.isShowingProfile = true })
-                    } else if playerModel.selectedRole == nil {
-                        RoleSelectionView(selectedRole: $playerModel.selectedRole, confirmAction: { role in
-                            playerModel.selectedRole = role
-                            playerModel.isShowingProfile = true
+                    if !playerViewModel.player.isShowingProfile {
+                        NicknameView(nickname: $playerViewModel.player.nickname, nextAction: { playerViewModel.player.isShowingProfile = true })
+                    } else if playerViewModel.player.selectedRole == "" {
+                        RoleSelectionView(selectedRole: $playerViewModel.player.selectedRole, confirmAction: { role in
+                            playerViewModel.player.selectedRole = role
+                            playerViewModel.player.isShowingProfile = true
                         })
                     } else {
-                        ProfileView(nickname: playerModel.nickname, selectedRole: playerModel.selectedRole)
+                        ProfileView(nickname: playerViewModel.player.nickname, selectedRole: playerViewModel.player.selectedRole, attack: playerViewModel.player.playerAttack, HP: playerViewModel.player.playerHP, MP: playerViewModel.player.playerMP)
                     }
                 }
             }
@@ -39,11 +47,11 @@ struct RegisterView: View {
 }
 
     
-    struct RegisterView_Previews: PreviewProvider {
-        static var previews: some View {
-            RegisterView()
-        }
-    }
+//    struct RegisterView_Previews: PreviewProvider {
+//        static var previews: some View {
+//            RegisterView()
+//        }
+//    }
     
     extension Color {
         static let customBackground = Color(hue: 0.115, saturation: 0.568, brightness: 0.986)

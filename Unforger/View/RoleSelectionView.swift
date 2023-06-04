@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct RoleSelectionView: View {
-    @Binding var selectedRole: String?
+    @Binding var selectedRole: String
     var confirmAction: (String) -> Void
     
     var body: some View {
@@ -31,7 +31,7 @@ struct RoleSelectionView: View {
 struct RoleButton: View {
     var role: String
     var imageName: String
-    @Binding var selectedRole: String?
+    @Binding var selectedRole: String
     var confirmAction: (String) -> Void
     
     var body: some View {
