@@ -10,6 +10,12 @@ import Foundation
 
 extension BattleView {
     class ViewModel: ObservableObject {
+        
+        @Published var character: Player
+        init(character: Player) {
+            self.player = player
+        }
+        
         private let animSpeed = 0.2
         @Published var playerCurrentAnim = "idle"
         @Published var playerCurrentAnimCount = 1
