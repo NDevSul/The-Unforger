@@ -26,6 +26,12 @@ struct BottomSheetWolf: View {
                     .padding(9)
                     .background(Color(UIColor(.accentColor)))
                     .mask(Circle())
+//                Image(systemName: "xmark")
+//                    .font(.body.bold())
+//                    .foregroundColor(.white)
+//                    .padding(9)
+//                    .background(Color(UIColor(.accentColor)))
+//                    .mask(Circle())
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topTrailing)
             .padding()
