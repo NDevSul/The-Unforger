@@ -51,3 +51,10 @@ struct RoleButton: View {
         .foregroundColor(selectedRole == role ? .blue : .gray)
     }
 }
+
+
+struct RoleSelectionView_Previews: PreviewProvider {
+    static var previews: some View {
+        BattleView()
+    }
+}

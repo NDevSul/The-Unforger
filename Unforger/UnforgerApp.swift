@@ -11,7 +11,7 @@ import SwiftUI
 struct UnforgerApp: App {
     var body: some Scene {
         WindowGroup {
-            BattleView() //balikin ke splashscreen / registerview after testing
+            RegisterView() //balikin ke splashscreen / registerview after testing
         }
     }
 }
