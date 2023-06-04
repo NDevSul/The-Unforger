@@ -48,7 +48,7 @@ extension BattleView {
                     }
                 }
             } else {
-                self.timerPlayer!.invalidate()
+                self.timerPlayer?.invalidate()
                 self.timerPlayer = nil
                 self.playerCurrentAnimCount = 1
             }
@@ -104,16 +104,6 @@ extension BattleView {
                             damageTimer!.invalidate() // matikan timer
                             damageTimer = nil
                             
-                            self.character.playerHP -= 50
-                            if self.character.playerHP <= 0 {
-                                self.character.playerHP = 0
-                            }
-                            
-                            self.character.playerMP -= 20
-                            if self.character.playerMP <= 0 {
-                                self.character.playerMP = 0
-                            }
-                            
                             self.opponentCurrentAnim = "idle"
                             self.toggleOpponentIdleAnimation(true)
                             DispatchQueue.main.asyncAfter(deadline: .now() + 1.1) {
@@ -152,12 +142,24 @@ extension BattleView {
                     attackTimer!.invalidate()
                     attackTimer = nil
                     
-                    // kembalikan ke idle animation
-                    self.opponentCurrentAnim = "idle"
-                    self.toggleOpponentIdleAnimation(true)
                     
-                    self.togglePlayerIdleAnimation(false)
-                    self.playerCurrentAnim = "dmg"
+                    
+                    self.character.playerHP -= 50
+                    
+                    if self.character.playerHP <= 0 {
+                        self.character.playerHP = 0
+                        self.contohMatiPlayer()
+                    } else {
+                        // kembalikan ke idle animation
+                        self.opponentCurrentAnim = "idle"
+                        self.toggleOpponentIdleAnimation(true)
+                        
+                        self.togglePlayerIdleAnimation(false)
+                        self.playerCurrentAnim = "dmg"
+                    }
+                    
+                    
+                    
                     var damageTimer: Timer?// timer oponent kena damage
                     
                     damageTimer = Timer.scheduledTimer(withTimeInterval: 0.3, repeats: true) { _ in
@@ -187,9 +189,7 @@ extension BattleView {
             
         }
         
-        func contohMatiOpponent() -> Void {
-            if character.playerHP <= 0 {
-
+        func contohMatiPlayer() -> Void {
                 self.togglePlayerIdleAnimation(false) // matikan loop idle animasi
                 self.playerCurrentAnim = "die" // ganti ke animasi attack (hanya ada idle dan atk)
                 var dyingTimer: Timer?
@@ -197,7 +197,7 @@ extension BattleView {
                     dyingTimer!.invalidate()
                     dyingTimer = nil
                 }
-            }
+            
         }
         
         
