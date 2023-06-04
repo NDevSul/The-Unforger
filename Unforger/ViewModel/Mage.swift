@@ -11,6 +11,7 @@ struct Mage: Classable {
     var damageAnimationCount: Int = 3
     var idleAnimationCount: Int = 7
     var attackAnimationCount: Int = 4
+    //hi
     
     var type: String = "Mage"
     
