@@ -45,6 +45,7 @@
 		0480F6192A2BC4050060E7E4 /* Mage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0480F6182A2BC4050060E7E4 /* Mage.swift */; };
 		0480F6342A2C8FBC0060E7E4 /* MusicPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0480F6332A2C8FBC0060E7E4 /* MusicPlayer.swift */; };
 		0480F6362A2C8FF90060E7E4 /* lagudegdegan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0480F6352A2C8FF90060E7E4 /* lagudegdegan.mp3 */; };
+		0480F63C2A2CF1760060E7E4 /* Fighter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0480F63B2A2CF1760060E7E4 /* Fighter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,6 +107,7 @@
 		0480F6182A2BC4050060E7E4 /* Mage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Mage.swift; path = Unforger/ViewModel/Mage.swift; sourceTree = SOURCE_ROOT; };
 		0480F6332A2C8FBC0060E7E4 /* MusicPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayer.swift; sourceTree = "<group>"; };
 		0480F6352A2C8FF90060E7E4 /* lagudegdegan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lagudegdegan.mp3; sourceTree = "<group>"; };
+		0480F63B2A2CF1760060E7E4 /* Fighter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fighter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -277,6 +279,7 @@
 		0480F60D2A2BC2060060E7E4 /* PlayerClass */ = {
 			isa = PBXGroup;
 			children = (
+				0480F63B2A2CF1760060E7E4 /* Fighter.swift */,
 				0480F60E2A2BC2060060E7E4 /* Assasin.swift */,
 				0480F6182A2BC4050060E7E4 /* Mage.swift */,
 			);
@@ -424,6 +427,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04099E672A2C6D4200CABD06 /* SheetCardDyig.swift in Sources */,
+				0480F63C2A2CF1760060E7E4 /* Fighter.swift in Sources */,
 				0480F6192A2BC4050060E7E4 /* Mage.swift in Sources */,
 				041199A02A2040AB00628E84 /* RegisterView.swift in Sources */,
 				04099E512A2C6B3200CABD06 /* BottomSheetCastle.swift in Sources */,
