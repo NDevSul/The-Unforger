@@ -24,10 +24,7 @@ struct RegisterView: View {
                     .edgesIgnoringSafeArea(.all)
                 
                 VStack {
-                    Image("The_Unforger")
-                        .resizable()
-                        .aspectRatio(contentMode: .fill)
-                        .frame(height: 150)
+                    
                     
                     if !playerViewModel.player.isShowingProfile {
                         NicknameView(nickname: $playerViewModel.player.nickname, nextAction: { playerViewModel.player.isShowingProfile = true })

@@ -12,6 +12,10 @@ struct RoleSelectionView: View {
     var confirmAction: (String) -> Void
     
     var body: some View {
+        Image("The_Unforger")
+            .resizable()
+            .aspectRatio(contentMode: .fill)
+            .frame(height: 150)
         VStack {
             Text("Pick your role")
                 .font(.title)

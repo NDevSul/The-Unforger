@@ -13,6 +13,10 @@ struct NicknameView: View {
     let imagesHero: [String] = ["assassin_model", "mage_model", "warrior_model"]
     
     var body: some View {ScrollView {
+        Image("The_Unforger")
+            .resizable()
+            .aspectRatio(contentMode: .fill)
+            .frame(height: 150)
         LazyVGrid(columns: [
             GridItem(.flexible(), spacing: 8),
             GridItem(.flexible(), spacing: 8),
