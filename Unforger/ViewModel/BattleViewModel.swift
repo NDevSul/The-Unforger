@@ -10,7 +10,7 @@ import Foundation
 
 extension BattleView {
     class ViewModel: ObservableObject {
-        private let animSpeed = 0.3
+        private let animSpeed = 0.2
         @Published var playerCurrentAnim = "idle"
         @Published var playerCurrentAnimCount = 1
         

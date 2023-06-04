@@ -162,8 +162,8 @@ struct BattleView: View {
 
 
 
-struct BattleView_Previews: PreviewProvider {
-    static var previews: some View {
-        BattleView()
-    }
-}
+//struct BattleView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        BattleView()
+//    }
+//}
