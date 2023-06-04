@@ -22,6 +22,7 @@
 		04099E6C2A2C6DE400CABD06 /* WolfView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04099E6B2A2C6DE400CABD06 /* WolfView.swift */; };
 		04099E6E2A2C6DFB00CABD06 /* Dyingview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04099E6D2A2C6DFB00CABD06 /* Dyingview.swift */; };
 		0409B7E92A2B86CE00A6F1EA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0409B7E82A2B86CE00A6F1EA /* ContentView.swift */; };
+		0409B7F12A2C735000A6F1EA /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0409B7F02A2C735000A6F1EA /* Enemy.swift */; };
 		0411999E2A2040AB00628E84 /* UnforgerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0411999D2A2040AB00628E84 /* UnforgerApp.swift */; };
 		041199A02A2040AB00628E84 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0411999F2A2040AB00628E84 /* RegisterView.swift */; };
 		041199A22A2040AC00628E84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 041199A12A2040AC00628E84 /* Assets.xcassets */; };
@@ -76,6 +77,7 @@
 		04099E6B2A2C6DE400CABD06 /* WolfView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WolfView.swift; sourceTree = "<group>"; };
 		04099E6D2A2C6DFB00CABD06 /* Dyingview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dyingview.swift; sourceTree = "<group>"; };
 		0409B7E82A2B86CE00A6F1EA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0409B7F02A2C735000A6F1EA /* Enemy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
 		0411999A2A2040AB00628E84 /* Unforger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Unforger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0411999D2A2040AB00628E84 /* UnforgerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnforgerApp.swift; sourceTree = "<group>"; };
 		0411999F2A2040AB00628E84 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
@@ -259,6 +261,7 @@
 				0480F60F2A2BC2060060E7E4 /* Skills.swift */,
 				0480F6112A2BC2060060E7E4 /* Player.swift */,
 				0480F6122A2BC2060060E7E4 /* Job.swift */,
+				0409B7F02A2C735000A6F1EA /* Enemy.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -428,6 +431,7 @@
 				04099E6E2A2C6DFB00CABD06 /* Dyingview.swift in Sources */,
 				0480F6092A2BC1450060E7E4 /* BattleViewModel.swift in Sources */,
 				04099E552A2C6BD000CABD06 /* BottomSheetDying.swift in Sources */,
+				0409B7F12A2C735000A6F1EA /* Enemy.swift in Sources */,
 				0480F60B2A2BC1D50060E7E4 /* BattleView.swift in Sources */,
 				04099E582A2C6C1F00CABD06 /* BannerHome.swift in Sources */,
 				0411999E2A2040AB00628E84 /* UnforgerApp.swift in Sources */,
