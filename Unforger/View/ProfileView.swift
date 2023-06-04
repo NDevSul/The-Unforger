@@ -24,35 +24,7 @@ struct ProfileView: View {
                             .offset(x:65, y: -100)
                     }
                     .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
-                    VStack{
-                        Text("Hello, \(nickname)")
-                            .font(.title)
-                            .fontWeight(.bold)
-                            .offset(x:35, y: -40)
-                        Text("You role is \(selectedRole)")
-                            .font(.system(size: 15))
-                            .fontWeight(.light)
-                            .foregroundColor(.gray)
-                            .offset(x:35, y:-40)
-                        Text("\(HP)")
-                            .font(.title)
-                            .fontWeight(.bold)
-                            .offset(x: 40, y: 15)
-                        Text("HP")
-                            .font(.system(size: 15))
-                            .fontWeight(.light)
-                            .offset(x: 40, y: 20)
-                            .foregroundColor(.gray)
-                        Text("\(MP)")
-                            .font(.title)
-                            .fontWeight(.bold)
-                            .offset(x: 130, y: -40)
-                        Text("MP")
-                            .font(.system(size: 15))
-                            .fontWeight(.light)
-                            .offset(x: 130, y: -30)
-                            .foregroundColor(.gray)
-                    }
+                    
 //                    tes
                     
                     .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
