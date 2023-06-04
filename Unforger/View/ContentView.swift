@@ -29,7 +29,7 @@ struct ContentView: View {
                     }
                     .padding(.trailing, 8)
                     .background(
-                        NavigationLink(destination: Profile(), isActive: $profile) {
+                        NavigationLink(destination: ProfileView(), isActive: $profile) {
                             EmptyView()
                         }
                     )
@@ -39,7 +39,7 @@ struct ContentView: View {
                 }
                 .padding()
                 
-                CardView()
+                BannerHome()
                     .frame(height: 200)
                     .padding(.horizontal, 24)
                 
@@ -52,7 +52,7 @@ struct ContentView: View {
                     Button(action: {
                         show.toggle()
                     }) {
-                        CardDungen1(title: "Dead Castle", y: 100)
+                        BannerCastle(title: "Dead Castle", y: 100)
                             .frame(width: 160, height: 300)
                             .offset(x: -10, y: 10)
                     }
@@ -80,17 +80,17 @@ struct ContentView: View {
                 
             }
             .sheet(isPresented: $profile) {
-                Profile()
+                ProfileView()
             }
             .sheet(isPresented: $show) {
-                BottomSheet(show: $show)
+                BottomSheetCastle(show: $show)
             }
             
             .sheet(isPresented: $asu) {
-                Sheet1(show: $asu)
+                BottomSheetWolf(show: $asu)
             }
             .sheet(isPresented: $blok) {
-                Sheet2(show: $blok)
+                BottomSheetDying(show: $blok)
             }
         }
         

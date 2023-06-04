@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		04099E4E2A2C6AB900CABD06 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04099E4D2A2C6AB900CABD06 /* SplashScreen.swift */; };
 		04099E512A2C6B3200CABD06 /* BottomSheetCastle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04099E502A2C6B3200CABD06 /* BottomSheetCastle.swift */; };
+		04099E532A2C6B9300CABD06 /* BottomSheetWolf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04099E522A2C6B9300CABD06 /* BottomSheetWolf.swift */; };
+		04099E552A2C6BD000CABD06 /* BottomSheetDying.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04099E542A2C6BD000CABD06 /* BottomSheetDying.swift */; };
+		04099E582A2C6C1F00CABD06 /* BannerHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04099E572A2C6C1F00CABD06 /* BannerHome.swift */; };
+		04099E5A2A2C6C4E00CABD06 /* BannerCastle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04099E592A2C6C4E00CABD06 /* BannerCastle.swift */; };
 		0409B7E92A2B86CE00A6F1EA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0409B7E82A2B86CE00A6F1EA /* ContentView.swift */; };
 		0411999E2A2040AB00628E84 /* UnforgerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0411999D2A2040AB00628E84 /* UnforgerApp.swift */; };
 		041199A02A2040AB00628E84 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0411999F2A2040AB00628E84 /* RegisterView.swift */; };
@@ -51,6 +55,10 @@
 /* Begin PBXFileReference section */
 		04099E4D2A2C6AB900CABD06 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		04099E502A2C6B3200CABD06 /* BottomSheetCastle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetCastle.swift; sourceTree = "<group>"; };
+		04099E522A2C6B9300CABD06 /* BottomSheetWolf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetWolf.swift; sourceTree = "<group>"; };
+		04099E542A2C6BD000CABD06 /* BottomSheetDying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetDying.swift; sourceTree = "<group>"; };
+		04099E572A2C6C1F00CABD06 /* BannerHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerHome.swift; sourceTree = "<group>"; };
+		04099E592A2C6C4E00CABD06 /* BannerCastle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCastle.swift; sourceTree = "<group>"; };
 		0409B7E82A2B86CE00A6F1EA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0411999A2A2040AB00628E84 /* Unforger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Unforger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0411999D2A2040AB00628E84 /* UnforgerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnforgerApp.swift; sourceTree = "<group>"; };
@@ -104,9 +112,21 @@
 		04099E4F2A2C6B1100CABD06 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				04099E562A2C6C0800CABD06 /* Card */,
 				04099E502A2C6B3200CABD06 /* BottomSheetCastle.swift */,
+				04099E522A2C6B9300CABD06 /* BottomSheetWolf.swift */,
+				04099E542A2C6BD000CABD06 /* BottomSheetDying.swift */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		04099E562A2C6C0800CABD06 /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				04099E572A2C6C1F00CABD06 /* BannerHome.swift */,
+				04099E592A2C6C4E00CABD06 /* BannerCastle.swift */,
+			);
+			path = Card;
 			sourceTree = "<group>";
 		};
 		0409B7E42A2B64BB00A6F1EA /* ViewModel */ = {
@@ -346,6 +366,7 @@
 				041199A02A2040AB00628E84 /* RegisterView.swift in Sources */,
 				04099E512A2C6B3200CABD06 /* BottomSheetCastle.swift in Sources */,
 				0480F6142A2BC2060060E7E4 /* Skills.swift in Sources */,
+				04099E532A2C6B9300CABD06 /* BottomSheetWolf.swift in Sources */,
 				0480F6132A2BC2060060E7E4 /* Assasin.swift in Sources */,
 				0442BB9A2A28FC5600525AF8 /* RoleSelectionView.swift in Sources */,
 				0480F6172A2BC2060060E7E4 /* Job.swift in Sources */,
@@ -355,9 +376,12 @@
 				0480F5F42A2B84370060E7E4 /* OpeningDialogue.swift in Sources */,
 				0480F5F82A2B966C0060E7E4 /* OpeningDialogueCard.swift in Sources */,
 				0409B7E92A2B86CE00A6F1EA /* ContentView.swift in Sources */,
+				04099E5A2A2C6C4E00CABD06 /* BannerCastle.swift in Sources */,
 				0442BB9C2A28FCDB00525AF8 /* ProfileView.swift in Sources */,
 				0480F6092A2BC1450060E7E4 /* BattleViewModel.swift in Sources */,
+				04099E552A2C6BD000CABD06 /* BottomSheetDying.swift in Sources */,
 				0480F60B2A2BC1D50060E7E4 /* BattleView.swift in Sources */,
+				04099E582A2C6C1F00CABD06 /* BannerHome.swift in Sources */,
 				0411999E2A2040AB00628E84 /* UnforgerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
