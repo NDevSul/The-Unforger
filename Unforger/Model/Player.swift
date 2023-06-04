@@ -8,8 +8,20 @@
 import Foundation
 
 struct Player {
-    var nickname: String
-    var selectedRole: String?
-    var isShowingProfile: Bool
+    var playerName: String
+    var role: String
+    var playerHP: Int
+    var playerMP: Int
+    var potion : Int
+    var elixir : Int
+    
+    init(playerName: String, role: String, playerHP: Int, playerMP: Int, potion: Int, elixir: Int) {
+        self.playerName = playerName
+        self.role = role
+        self.playerHP = playerHP
+        self.playerMP = playerMP
+        self.potion = potion
+        self.elixir = elixir
+    }
+    
 }
-
