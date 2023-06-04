@@ -50,7 +50,7 @@ struct BattleView: View {
                             .padding()
                             .background(Color.white)
                         
-                        Text("Health : \(vm.character.playerHP)\nMana : 100")
+                        Text("Health : \(vm.character.playerHP)\nMana : \(vm.character.playerMP)")
                             .font(.system(size: 24, weight: .bold, design: .default))
                             .foregroundColor(.black)
                             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)

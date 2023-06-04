@@ -104,7 +104,15 @@ extension BattleView {
                             damageTimer!.invalidate() // matikan timer
                             damageTimer = nil
                             
-                            self.character.playerHP -= 10
+                            self.character.playerHP -= 50
+                            if self.character.playerHP <= 0 {
+                                self.character.playerHP = 0
+                            }
+                            
+                            self.character.playerMP -= 20
+                            if self.character.playerMP <= 0 {
+                                self.character.playerMP = 0
+                            }
                             
                             self.opponentCurrentAnim = "idle"
                             self.toggleOpponentIdleAnimation(true)
