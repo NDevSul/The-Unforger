@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04099C0D2A2D950A00D27C55 /* cardTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04099C0C2A2D950A00D27C55 /* cardTest.swift */; };
 		04099E4E2A2C6AB900CABD06 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04099E4D2A2C6AB900CABD06 /* SplashScreen.swift */; };
 		04099E512A2C6B3200CABD06 /* BottomSheetCastle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04099E502A2C6B3200CABD06 /* BottomSheetCastle.swift */; };
 		04099E532A2C6B9300CABD06 /* BottomSheetWolf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04099E522A2C6B9300CABD06 /* BottomSheetWolf.swift */; };
@@ -66,6 +67,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04099C0C2A2D950A00D27C55 /* cardTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cardTest.swift; sourceTree = "<group>"; };
 		04099E4D2A2C6AB900CABD06 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		04099E502A2C6B3200CABD06 /* BottomSheetCastle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetCastle.swift; sourceTree = "<group>"; };
 		04099E522A2C6B9300CABD06 /* BottomSheetWolf.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetWolf.swift; sourceTree = "<group>"; };
@@ -235,6 +237,7 @@
 				0411999D2A2040AB00628E84 /* UnforgerApp.swift */,
 				041199A12A2040AC00628E84 /* Assets.xcassets */,
 				041199A32A2040AC00628E84 /* Preview Content */,
+				04099C0C2A2D950A00D27C55 /* cardTest.swift */,
 			);
 			path = Unforger;
 			sourceTree = "<group>";
@@ -441,6 +444,7 @@
 				0480F6162A2BC2060060E7E4 /* Player.swift in Sources */,
 				0442BB982A28FC1F00525AF8 /* NicknameView.swift in Sources */,
 				04099E4E2A2C6AB900CABD06 /* SplashScreen.swift in Sources */,
+				04099C0D2A2D950A00D27C55 /* cardTest.swift in Sources */,
 				04099E5E2A2C6CB200CABD06 /* BannerDying.swift in Sources */,
 				04099E652A2C6D3500CABD06 /* SheetCardWolf.swift in Sources */,
 				0480F5F42A2B84370060E7E4 /* OpeningDialogue.swift in Sources */,

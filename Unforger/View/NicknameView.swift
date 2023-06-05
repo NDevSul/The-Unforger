@@ -12,7 +12,8 @@ struct NicknameView: View {
     var nextAction: () -> Void
     let imagesHero: [String] = ["assassin_model", "mage_model", "warrior_model"]
     
-    var body: some View {ScrollView {
+    var body: some View {
+        VStack{
         Image("The_Unforger")
             .resizable()
             .aspectRatio(contentMode: .fill)
@@ -34,18 +35,18 @@ struct NicknameView: View {
             }
             
             GeometryReader { geometry in
-                                ZStack {
-                                    Image(imagesHero[1])
-                                        .resizable()
-                                        .scaledToFit()
-                                        .frame(height: 200)
-                                        .position(x: geometry.size.width / 2, y: geometry.size.height / 2 + 90) // Adjust the y value to position it lower
-                                        .alignmentGuide(.top) { _ in
-                                            0 // Align to the top
-                                        }
-                                    Color.clear // Placeholder to maintain grid layout
-                                }
-                            }
+                ZStack {
+                    Image(imagesHero[1])
+                        .resizable()
+                        .scaledToFit()
+                        .frame(height: 200)
+                        .position(x: geometry.size.width / 2, y: geometry.size.height / 2 + 90) // Adjust the y value to position it lower
+                        .alignmentGuide(.top) { _ in
+                            0 // Align to the top
+                        }
+                    Color.clear // Placeholder to maintain grid layout
+                }
+            }
             
             ZStack {
                 Image(imagesHero[2])
@@ -62,6 +63,7 @@ struct NicknameView: View {
     }
             Text("Let us know your name, adventurer")
                 .font(.system(size: 19))
+                .padding(.top, 30)
             VStack {
                 TextField("Insert Nickname", text: $nickname)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
