@@ -20,7 +20,7 @@ struct BannerCastle: View {
         }
         .foregroundColor(.white)
         .frame(maxWidth: .infinity)
-        .background(Image("dungeon1").scaleEffect(0.3).offset(x: x, y: y))
+        .background(Image("Village").scaleEffect(0.8).offset(x: x, y: y))
         .background(Color(UIColor(.accentColor)))
         .cornerRadius(10)
         .mask(RoundedCorner1(radius: 30, corners: [.topLeft, .bottomRight]))

@@ -19,7 +19,7 @@ struct SheetCardWolf: View {
         }
         .foregroundColor(.white)
         .frame(maxWidth: .infinity)
-        .background(Image("dungeon2").scaleEffect(0.5).offset(x: x, y: y))
+        .background(Image("werewolf").scaleEffect(2.3).offset(x: x, y: y))
         .background(Color(UIColor(.accentColor)))
         .cornerRadius(10)
         .mask(RoundedCorner5(radius: 30, corners: [.topLeft, .bottomRight]))

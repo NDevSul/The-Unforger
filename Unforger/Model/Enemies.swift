@@ -1,13 +1,13 @@
 //
-//  Enemy.swift
+//  Enemies.swift
 //  Unforger
 //
-//  Created by MacBook Pro on 04/06/23.
+//  Created by MacBook Pro on 05/06/23.
 //
 
 import Foundation
 
-struct Enemy {
+struct Enemies{
     var enemyName: String
     var enemyAttack: Int
     var enemyHP: Int

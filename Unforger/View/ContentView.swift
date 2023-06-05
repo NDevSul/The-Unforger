@@ -52,7 +52,7 @@ struct ContentView: View {
                     Button(action: {
                         show.toggle()
                     }) {
-                        BannerCastle(title: "Dead Castle", y: 100)
+                        BannerCastle(title: "Village", y: 100)
                             .frame(width: 160, height: 300)
                             .offset(x: -10, y: 10)
                     }

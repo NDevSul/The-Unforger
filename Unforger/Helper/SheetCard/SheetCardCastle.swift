@@ -19,7 +19,7 @@ struct SheetCardCastle: View {
         }
         .foregroundColor(.white)
         .frame(maxWidth: .infinity)
-        .background(Image("dungeon1").scaleEffect(0.5).offset(x: x, y: y))
+        .background(Image("Village").scaleEffect(0.9).offset(x: x, y: y))
         .background(Color(UIColor(.accentColor)))
         .cornerRadius(10)
         .mask(RoundedCorner4(radius: 30, corners: [.topLeft, .bottomRight]))

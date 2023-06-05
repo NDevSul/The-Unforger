@@ -32,7 +32,7 @@ struct WolfView: View {
                                 .foregroundColor(.white)
                                 .padding()
                                 .background(
-                                   Image("dungeon2")
+                                   Image("werewolf")
                                     .resizable()
                                     .clipped()
                                     .padding(-10)

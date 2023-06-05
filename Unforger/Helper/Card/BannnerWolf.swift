@@ -20,7 +20,7 @@ struct BannnerWolf: View {
         }
         .foregroundColor(.white)
         .frame(width:160, height: 140)
-        .background(Image("dungeon2").scaleEffect(0.3).offset(x: x, y: y))
+        .background(Image("werewolf").scaleEffect(1).offset(x: x, y: y))
         .background(Color(UIColor(.accentColor)))
         .cornerRadius(10)
         .mask(RoundedCorner2(radius: 30, corners: [.topLeft, .bottomRight]))

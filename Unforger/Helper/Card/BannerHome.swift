@@ -9,8 +9,8 @@ import SwiftUI
 
 struct BannerHome: View {
     var title = ""
-    var x: CGFloat = 0
-    var y: CGFloat = 0
+    var x: CGFloat = -15
+    var y: CGFloat = 10
     var body: some View {
         VStack{
             Text(title).font(.title).bold()
@@ -19,7 +19,7 @@ struct BannerHome: View {
         }
         .foregroundColor(.white)
         .frame(maxWidth: .infinity)
-        .background(Image("banner2").scaleEffect(1).offset(x: x, y: y))
+        .background(Image("theunforger").scaleEffect(0.3).offset(x: x, y: y))
         .background(Color(UIColor(.accentColor)))
         .cornerRadius(10)
         .mask(RoundedCorner(radius: 30, corners: [.topLeft, .bottomRight]))

@@ -32,7 +32,7 @@ struct CastleView: View {
                                 .foregroundColor(.white)
                                 .padding()
                                 .background(
-                                   Image("dungeon1")
+                                   Image("Village")
                                     .resizable()
                                     .clipped()
                                     .padding(-10)
