@@ -7,7 +7,7 @@
 import SwiftUI
 
 struct BattleView: View {
-
+    
     @ObservedObject var vm: ViewModel
     
     
@@ -75,71 +75,21 @@ struct BattleView: View {
                     if vm.disableControl{
                         Text("Nunggu woi")
                     }else{
-                        Button(action: {
-                            vm.contohAttackPlayer()
-                        }) {
-                            Text("Skill 1")
-                                .foregroundColor(.black)
-                                .padding()
-                                .frame(maxWidth: .infinity)
-                                .background(Color.customBackground)
-                                .cornerRadius(10)
-                                .bold()
-                        }
-                        Button(action: {
-                        }) {
-                            Text("Skill 2")
-                                .foregroundColor(.black)
-                                .padding()
-                                .frame(maxWidth: .infinity)
-                                .background(Color.customBackground)
-                                .cornerRadius(10)
-                                .bold()
+                        
+                        ForEach(vm.player.skills, id: \.self) { skill in
+                            Button(action: {
+                                vm.doPlayerAttack(skill: skill)
+                            }) {
+                                Text(skill.skillname)
+                                    .foregroundColor(.black)
+                                    .padding()
+                                    .frame(maxWidth: .infinity)
+                                    .background(Color.customBackground)
+                                    .cornerRadius(10)
+                                    .bold()
+                            }
                         }
                         
-                        Button(action: {
-                        }) {
-                            Text("Skill 3")
-                                .foregroundColor(.black)
-                                .padding()
-                                .frame(maxWidth: .infinity)
-                                .background(Color.customBackground)
-                                .cornerRadius(10)
-                                .bold()
-                        }
-                        
-                        Button(action: {
-                        }) {
-                            Text("Regenerate Health")
-                                .foregroundColor(.black)
-                                .padding()
-                                .frame(maxWidth: .infinity)
-                                .background(Color.customBackground)
-                                .cornerRadius(10)
-                                .bold()
-                        }
-                        
-                        Button(action: {
-                        }) {
-                            Text("Regenerate Mana")
-                                .foregroundColor(.black)
-                                .padding()
-                                .frame(maxWidth: .infinity)
-                                .background(Color.customBackground)
-                                .cornerRadius(10)
-                                .bold()
-                        }
-                        
-                        Button(action: {
-                        }) {
-                            Text("Surrender")
-                                .foregroundColor(.black)
-                                .padding()
-                                .frame(maxWidth: .infinity)
-                                .background(Color.red)
-                                .cornerRadius(10)
-                                .bold()
-                        }
                         
                     }
                 }

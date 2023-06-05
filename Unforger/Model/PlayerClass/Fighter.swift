@@ -16,6 +16,8 @@ struct Fighter: Classable {
     var type: String = "Fighter"
     
     var skills: [Skills] = [
-        Skills(skillname: "Booty shaker", skilldamage: 100, skillmana: 1)
+        Skills(skillname: "Basic Attack", skilldamage: 10, skillmana: 0),
+        Skills(skillname: "Slash", skilldamage: 20, skillmana: 5),
+        Skills(skillname: "Jaw Breaker", skilldamage: 50, skillmana: 50)
     ]
 }

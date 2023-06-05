@@ -14,9 +14,9 @@
             filePath = "Unforger/ViewModel/BattleViewModel.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "114"
-            endingLineNumber = "114"
-            landmarkName = "contohAttackPlayer()"
+            startingLineNumber = "115"
+            endingLineNumber = "115"
+            landmarkName = "doPlayerAttack(skill:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

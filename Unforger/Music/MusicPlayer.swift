@@ -12,7 +12,7 @@ class MusicPlayer {
 
     init() {
         // Initialize the audio player and set up the music file
-        guard let musicURL = Bundle.main.url(forResource: "lagudegdega", withExtension: "mp3") else {
+        guard let musicURL = Bundle.main.url(forResource: "lagudegdegan", withExtension: "mp3") else {
             print("Failed to find the music file.")
             return
         }

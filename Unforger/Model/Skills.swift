@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Skills {
+struct Skills: Hashable {
     var skillname : String
     var skilldamage : Int
     var skillmana : Int

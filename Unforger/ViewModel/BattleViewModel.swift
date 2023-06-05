@@ -70,7 +70,7 @@ extension BattleView {
             }
         }
         
-        func contohAttackPlayer() -> Void {
+        func doPlayerAttack(skill: Skills) -> Void {
             
             self.disableControl = true
             
@@ -106,6 +106,7 @@ extension BattleView {
                             
                             self.opponentCurrentAnim = "idle"
                             self.toggleOpponentIdleAnimation(true)
+                            
                             DispatchQueue.main.asyncAfter(deadline: .now() + 1.1) {
                                 self.contohAttackOpponent()
                             }

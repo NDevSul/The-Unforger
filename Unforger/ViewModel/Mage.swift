@@ -16,6 +16,8 @@ struct Mage: Classable {
     var type: String = "Mage"
     
     var skills: [Skills] = [
-        Skills(skillname: "Booty shaker", skilldamage: 100, skillmana: 1)
+        Skills(skillname: "Basic Attack", skilldamage: 10, skillmana: 0),
+        Skills(skillname: "Splash", skilldamage: 20, skillmana: 5),
+        Skills(skillname: "Clone Summoning", skilldamage: 50, skillmana: 50)
     ]
 }
