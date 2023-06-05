@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct BottomSheetCastle: View {
+    @ObservedObject var vm: BattleView.ViewModel
     @State var translation: CGSize = .zero
     @State var offsetY: CGFloat = 0
     @Binding var show: Bool
@@ -34,9 +35,10 @@ struct BottomSheetCastle: View {
     }
     
     var content: some View {
+
         GeometryReader { proxy in
             VStack{
-                CastleView()
+                CastleView(vm: vm)
                 
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -72,9 +74,10 @@ struct BottomSheetCastle: View {
         }
     }
 }
-struct BottomSheetCastle_Previews: PreviewProvider {
-    static var previews: some View {
-        BottomSheetCastle(show: .constant(true))
-            .background(.blue)
-    }
-}
+
+//struct BottomSheetCastle_Previews: PreviewProvider {
+//    static var previews: some View {
+//        BottomSheetCastle(show: .constant(true))
+//            .background(.blue)
+//    }
+//}

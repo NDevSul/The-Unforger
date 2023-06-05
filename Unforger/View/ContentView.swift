@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var vm: BattleView.ViewModel
+
     @State var show = false
     @State var asu = false
     @State var blok = false
@@ -83,7 +85,7 @@ struct ContentView: View {
 //                ProfileView()
             }
             .sheet(isPresented: $show) {
-                BottomSheetCastle(show: $show)
+                BottomSheetCastle(vm: vm, show: $show)
             }
             
             .sheet(isPresented: $asu) {
@@ -98,8 +100,8 @@ struct ContentView: View {
 }
 
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
+//struct ContentView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ContentView()
+//    }
+//}

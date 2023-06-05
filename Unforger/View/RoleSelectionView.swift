@@ -17,7 +17,7 @@ struct RoleSelectionView: View {
     
     var body: some View {
         
-        NavigationLink(destination: BattleView(vm: vm), isActive: $navigateToBattleView) { // Use NavigationLink to navigate to BattleView
+        NavigationLink(destination: ContentView(vm: vm), isActive: $navigateToBattleView) { // Use NavigationLink to navigate to BattleView
                     EmptyView()
                 }
                 .hidden()
