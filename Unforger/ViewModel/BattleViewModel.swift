@@ -106,7 +106,6 @@ extension BattleView {
                             
                             self.opponentCurrentAnim = "idle"
                             self.toggleOpponentIdleAnimation(true)
-                            
                             DispatchQueue.main.asyncAfter(deadline: .now() + 1.1) {
                                 self.contohAttackOpponent()
                             }
