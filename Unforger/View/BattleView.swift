@@ -8,6 +8,7 @@ import SwiftUI
 
 struct BattleView: View {
     
+    @StateObject var playerViewModel: PlayerViewModel
     @ObservedObject var vm: ViewModel
     @State private var alertItem: AlertItem?
     
@@ -50,12 +51,12 @@ struct BattleView: View {
                             .frame(width: 100, height: 50)
                         
                         VStack(alignment: .leading) {
-                            Text("Player 1")
+                            Text("\(playerViewModel.player.nickname)")
                                 .font(.title)
                                 .foregroundColor(.blue)
-                            Text("Health: 100")
+                            Text("Health: \(vm.character.playerHP)")
                                 .foregroundColor(.green)
-                            Text("Mana: 50")
+                            Text("Mana: \(vm.character.playerMP)")
                                 .foregroundColor(.orange)
                         }
                         
@@ -69,10 +70,10 @@ struct BattleView: View {
                         Spacer()
                         
                         VStack(alignment: .trailing) {
-                            Text("Enemy")
+                            Text("\(vm.enemy.enemyName)")
                                 .font(.title)
                                 .foregroundColor(.red)
-                            Text("Health: 80")
+                            Text("Health: \(vm.enemy.enemyHP)")
                                 .foregroundColor(.green)
                         }
                         
@@ -80,52 +81,12 @@ struct BattleView: View {
                             .resizable()
                             .frame(width: 100, height: 50)
                     }
-    
-                .padding()
-                .background(Color.gray.opacity(0.2))
-                .cornerRadius(10)
-                .frame(width: 300, height: 120)
-//                VStack(alignment: .leading) {
-//                    HStack(alignment: .top){
-//                        Image("assassin_model")
-//                            .resizable()
-//                            .aspectRatio(contentMode: .fill)
-//                            .frame(width: 180, height: 100)
-//                            .padding()
-//                            .background(Color.white)
-//
-//                        Text("Health : \(vm.enemy.enemyHP)\nMana : \(vm.character.playerMP)\nPotion : \(vm.character.potion)")
-//                            .font(.system(size: 24, weight: .bold, design: .default))
-//                            .foregroundColor(.black)
-//                            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
-//                            .alignmentGuide(.leading) { _ in -100 }
-//
-//                        Spacer()
-//
-//
-//                        HStack {
-//                            Spacer()
-//
-//                            VStack(alignment: .trailing) {
-//                                Text("Enemy")
-//                                    .font(.title)
-//                                    .foregroundColor(.red)
-//                                Text("Health: 80")
-//                                    .foregroundColor(.green)
-//                            }
-//
-//                            Image("assasin_atk_1")
-//                                .resizable()
-//                                .frame(width: 50, height: 50)
-//                        }
-//
-//                    }
-//                    .frame(maxWidth: .infinity, maxHeight: .infinity)
-//                    .background(Color.white)
-//                    .padding(10)
-//                    .background(Color.white)
-//                    .cornerRadius(10)
-//                    .shadow(radius: 5)
+                    
+                    .padding()
+                    .background(Color.gray.opacity(0.2))
+                    .cornerRadius(10)
+                    .frame(width: 300, height: 120)
+                    
                     Spacer()
                 }
                 .fixedSize() // Fit the frame to the content
@@ -134,72 +95,86 @@ struct BattleView: View {
                 
                 //buttons
                 VStack(spacing: 10) {
-                    if vm.disableControl{
+                    if vm.disableControl {
                         Text("Enemy's Turn")
                     } else {
-                        
-                        ForEach(vm.player.skills, id: \.self) { skill in
+                        if vm.character.playerHP <= 0 {
+                            alertItem = AlertContext.playerLose
+                        } else if vm.enemy.enemyHP <= 0 {
+                            alertItem = AlertContext.playerWin
+                        } else {
+                            ForEach(vm.player.skills, id: \.self) { skill in
+                                Button(action: {
+                                    vm.doPlayerAttack(skill: skill)
+                                    
+                                    if vm.player.skills[0].skillName == skill.skillName {
+                                        vm.skill1()
+                                    } else if vm.player.skills[1].skillName == skill.skillName {
+                                        vm.skill2()
+                                    } else {
+                                        vm.skill3()
+                                    }
+                                    
+                                }) {
+                                    Text(skill.skillName)
+                                        .foregroundColor(.black)
+                                        .padding()
+                                        .frame(maxWidth: .infinity)
+                                        .background(Color.customBackground)
+                                        .cornerRadius(10)
+                                        .bold()
+                                }
+                            }
                             Button(action: {
-                                vm.doPlayerAttack(skill: skill)
+                                
+                                if vm.character.potion > 0 {
+                                    if vm.character.playerHP >= 100 || vm.character.playerMP >= 50 {
+                                        alertItem = AlertContext.fullHP
+                                        return
+                                    } else {
+                                        vm.playerHeal()
+                                        if vm.character.playerHP > 100 {
+                                            vm.character.playerHP = 100
+                                        }
+                                    }
+                                    
+                                } else {
+                                    alertItem = AlertContext.noPotion
+                                    return
+                                }
+                                
                             }) {
-                                Text(skill.skillname)
+                                Text("Heal")
                                     .foregroundColor(.black)
                                     .padding()
                                     .frame(maxWidth: .infinity)
-                                    .background(Color.customBackground)
+                                    .background(.green)
                                     .cornerRadius(10)
                                     .bold()
                             }
                         }
-                        
-                        Button(action: {
-                            
-                            if vm.character.potion > 0 {
-                                if vm.character.playerHP >= 100 {
-                                    alertItem = AlertContext.fullHP
-                                    return
-                                } else {
-                                    vm.playerHeal()
-                                    if vm.character.playerHP > 100 {
-                                        vm.character.playerHP = 100
-                                    }
-                                }
-                                
-                            } else {
-                                alertItem = AlertContext.noPotion
-                                return
-                            }
-                            
-                        }) {
-                            Text("Heal")
-                                .foregroundColor(.black)
-                                .padding()
-                                .frame(maxWidth: .infinity)
-                                .background(.green)
-                                .cornerRadius(10)
-                                .bold()
-                        }
                     }
                 }
-                .frame(maxWidth: .infinity)
-                .padding()
-                .background(Color.gray.opacity(0.2))
-                .cornerRadius(10)
-                .padding()
-                .alert(item: $alertItem, content: { alertItem in
-                    Alert(title: alertItem.title, message: alertItem.message, dismissButton: .default(alertItem.buttonTitle, action: {}))
-                })
-            }
+
+            .frame(maxWidth: .infinity)
+            .padding()
+            .background(Color.gray.opacity(0.2))
+            .cornerRadius(10)
+            .padding()
+            .alert(item: $alertItem, content: { alertItem in
+                Alert(title: alertItem.title, message: alertItem.message, dismissButton: .default(alertItem.buttonTitle, action: {}))
+            })
         }
-        .onAppear {
-            musicPlayer.play()
-        }
-        .onDisappear {
-            musicPlayer.stop()
-        }
-        Spacer()
     }
+    //        .onAppear {
+    //            musicPlayer.play()
+    //        }
+    //        .onDisappear {
+    //            musicPlayer.stop()
+    //        }
+    //        Spacer()
 }
+
 
 
 

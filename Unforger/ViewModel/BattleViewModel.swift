@@ -20,9 +20,7 @@ extension BattleView {
         
         
         private let animSpeed = 0.2
-        
-        
-        
+                
         @Published var playerCurrentAnim = "idle"
         @Published var playerCurrentAnimCount = 1
         
@@ -30,7 +28,7 @@ extension BattleView {
         @Published var opponentCurrentAnimCount = 1
         
         @Published var player: Classable = Assasin()
-        
+                
         @Published var opponent: Classable = Enemy()
         
         // mendisable spam karena tidak boleh
@@ -79,6 +77,21 @@ extension BattleView {
             }
         }
         
+        func skill1() {
+            self.enemy.enemyHP -= self.player.skills[0].skillDamage
+            self.character.playerMP -= self.player.skills[0].skillMana
+        }
+        
+        func skill2() {
+            self.enemy.enemyHP -= self.player.skills[1].skillDamage
+            self.character.playerMP -= self.player.skills[1].skillMana
+        }
+        
+        func skill3() {
+            self.enemy.enemyHP -= self.player.skills[2].skillDamage
+            self.character.playerMP -= self.player.skills[2].skillMana
+        }
+        
         func doPlayerAttack(skill: Skills) -> Void {
             
             self.disableControl = true
@@ -97,6 +110,8 @@ extension BattleView {
                     attackTimer!.invalidate()
                     attackTimer = nil
                     
+                    
+                    
                     // kembalikan ke idle animation
                     self.playerCurrentAnim = "idle"
                     self.togglePlayerIdleAnimation(true)
@@ -112,6 +127,7 @@ extension BattleView {
                             
                             damageTimer!.invalidate() // matikan timer
                             damageTimer = nil
+                            
                             
                             self.opponentCurrentAnim = "idle"
                             self.toggleOpponentIdleAnimation(true)
@@ -150,7 +166,6 @@ extension BattleView {
                     // matikan timer
                     attackTimer!.invalidate()
                     attackTimer = nil
-                    
                     // attack musuh
                     self.character.playerHP -= self.enemy.enemyAttack
                     
