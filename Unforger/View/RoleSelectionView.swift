@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct RoleSelectionView: View {
+    
     @ObservedObject var vm: BattleView.ViewModel
     @Binding var selectedRole: String
     var confirmAction: (String) -> Void
@@ -16,11 +17,6 @@ struct RoleSelectionView: View {
 
     
     var body: some View {
-        
-        NavigationLink(destination: ContentView(vm: vm), isActive: $navigateToBattleView) { // Use NavigationLink to navigate to BattleView
-                    EmptyView()
-                }
-                .hidden()
         
         Image("The_Unforger")
             .resizable()
@@ -31,19 +27,19 @@ struct RoleSelectionView: View {
                 .font(.title)
             
             HStack(spacing: 30) {
-                RoleButton(role: "Mage", imageName: "mage_role", selectedRole: $vm.character.selectedRole) { role in
+                RoleButton(vm: vm, role: "Mage", imageName: "mage_role", selectedRole: $vm.character.selectedRole) { role in
                     selectedRole = role
                     confirmAction(role)
                     vm.player = Mage()
                     navigateToBattleView = true
                 }
-                RoleButton(role: "Assassin", imageName: "assassin_role", selectedRole: $vm.character.selectedRole) { role in
+                RoleButton(vm: vm, role: "Assassin", imageName: "assassin_role", selectedRole: $vm.character.selectedRole) { role in
                     selectedRole = role
                     confirmAction(role)
                     vm.player = Assasin()
                     navigateToBattleView = true
                 }
-                RoleButton(role: "Fighter", imageName: "fighter_role", selectedRole: $vm.character.selectedRole) { role in
+                RoleButton(vm: vm, role: "Fighter", imageName: "fighter_role", selectedRole: $vm.character.selectedRole) { role in
                     selectedRole = role
                     confirmAction(role)
                     vm.player = Fighter()
@@ -58,6 +54,7 @@ struct RoleSelectionView: View {
 }
 
 struct RoleButton: View {
+    @ObservedObject var vm: BattleView.ViewModel
     var role: String
     var imageName: String
     @Binding var selectedRole: String
@@ -67,7 +64,7 @@ struct RoleButton: View {
         Button(action: {
             selectedRole = role
             confirmAction(role)
-            
+    let contentView = ContentView(vm: vm, profile: true)// Create an instance of ContentView
         }) {
             VStack {
                 Image(imageName)

@@ -11,7 +11,7 @@ struct ContentView: View {
     @ObservedObject var vm: BattleView.ViewModel
 
     @State var show = false
-    @State var asu = false
+    @State var print = false
     @State var blok = false
     @State var profile = false
     
@@ -62,7 +62,7 @@ struct ContentView: View {
                     
                     VStack{
                         Button(action: {
-                            asu.toggle()
+                            print.toggle()
                         }) {
                             BannnerWolf(title: "Ware Wolf", y: 100)
                                 .frame(width: 160, height: 140)
@@ -88,8 +88,8 @@ struct ContentView: View {
                 BottomSheetCastle(vm: vm, show: $show)
             }
             
-            .sheet(isPresented: $asu) {
-                BottomSheetWolf(show: $asu)
+            .sheet(isPresented: $print) {
+                BottomSheetWolf(show: $print)
             }
             .sheet(isPresented: $blok) {
                 BottomSheetDying(show: $blok)
