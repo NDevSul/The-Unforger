@@ -8,7 +8,7 @@
 import Foundation
 
 struct Skills: Hashable {
-    var skillname : String
-    var skilldamage : Int
-    var skillmana : Int
+    var skillName : String
+    var skillDamage : Int
+    var skillMana : Int
 }

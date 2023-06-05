@@ -16,6 +16,6 @@ struct Enemy: Classable {
     var type: String = "Enemy"
     
     var skills: [Skills] = [
-        Skills(skillname: "Basic Attack", skilldamage: 10, skillmana: 0),
+        Skills(skillName: "Basic Attack", skillDamage: 10, skillMana: 0),
     ]
 }

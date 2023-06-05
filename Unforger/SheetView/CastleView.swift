@@ -13,6 +13,11 @@ struct CastleView: View {
     @State private var navigateToBattleView = false // State variable to control navigation
 
     var body: some View {
+//        NavigationLink(
+//            destination: BattleView(vm: vm), isActive: $navigateToBattleView) { // Use NavigationLink to navigate to BattleView
+//                    EmptyView()
+//                }
+//                .hidden()
         ZStack{
             ScrollView{
                 SheetCardCastle()
@@ -30,9 +35,6 @@ struct CastleView: View {
                         Button(action: {
                             show.toggle()
                             navigateToBattleView = true
-                            if navigateToBattleView == true {
-                                BattleView(vm:vm)
-                            }
                         }) {
                             Text("Start")
                                 .frame(width: 150, height: 10)
