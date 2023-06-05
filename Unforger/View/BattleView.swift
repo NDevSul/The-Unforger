@@ -9,6 +9,7 @@ import SwiftUI
 struct BattleView: View {
     
     @ObservedObject var vm: ViewModel
+    @State private var alertItem: AlertItem?
     
     
     let musicPlayer = MusicPlayer()
@@ -50,7 +51,7 @@ struct BattleView: View {
                             .padding()
                             .background(Color.white)
                         
-                        Text("Health : \(vm.character.playerHP)\nMana : \(vm.character.playerMP)")
+                        Text("Health : \(vm.character.playerHP)\nMana : \(vm.character.playerMP)\nPotion : \(vm.character.potion)")
                             .font(.system(size: 24, weight: .bold, design: .default))
                             .foregroundColor(.black)
                             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
@@ -90,7 +91,33 @@ struct BattleView: View {
                             }
                         }
                         
-                        
+                        Button(action: {
+                            
+                            if vm.character.potion > 0 {
+                                if vm.character.playerHP >= 100 {
+                                   alertItem = AlertContext.fullHP
+                                    return
+                                } else {
+                                    vm.playerHeal()
+                                    if vm.character.playerHP > 100 {
+                                        vm.character.playerHP = 100
+                                    }
+                                }
+                                
+                            } else {
+                                alertItem = AlertContext.noPotion
+                                return
+                            }
+                            
+                        }) {
+                            Text("Heal")
+                                .foregroundColor(.black)
+                                .padding()
+                                .frame(maxWidth: .infinity)
+                                .background(.green)
+                                .cornerRadius(10)
+                                .bold()
+                        }
                     }
                 }
                 .frame(maxWidth: .infinity)
@@ -98,6 +125,9 @@ struct BattleView: View {
                 .background(Color.gray.opacity(0.2))
                 .cornerRadius(10)
                 .padding()
+                .alert(item: $alertItem, content: { alertItem in
+                    Alert(title: alertItem.title, message: alertItem.message, dismissButton: .default(alertItem.buttonTitle, action: {}))
+                })
             }
         }
         .onAppear {

@@ -184,7 +184,9 @@ extension BattleView {
         }
         
         func playerHeal() -> Void {
-            self.character.playerHP += 20
+            character.potion -= 1
+            character.playerHP += 20
+            character.playerMP += 10
         }
         
         func playerDie() -> Void {
