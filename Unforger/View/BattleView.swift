@@ -41,6 +41,7 @@ struct BattleView: View {
             // Banner at the top
             // Centered Content
             VStack {
+                Spacer()
                 // Dialog Box
                 VStack {
                     // Player 1 information
@@ -50,13 +51,13 @@ struct BattleView: View {
                             .frame(width: 100, height: 50)
                         
                         VStack(alignment: .leading) {
-                            Text("Player 1")
+                            Text("\(vm.character.nickname)")
                                 .font(.title)
                                 .foregroundColor(.blue)
-                            Text("Health: 100")
+                            Text("Health: \(vm.character.playerMP)")
                                 .foregroundColor(.green)
-                            Text("Mana: 50")
-                                .foregroundColor(.orange)
+                            Text("Mana: \(vm.character.playerMP)")
+                                .foregroundColor(.blue)
                         }
                         
                         Spacer()
@@ -69,10 +70,10 @@ struct BattleView: View {
                         Spacer()
                         
                         VStack(alignment: .trailing) {
-                            Text("Enemy")
+                            Text("Villager")
                                 .font(.title)
                                 .foregroundColor(.red)
-                            Text("Health: 80")
+                            Text("Health: \(vm.enemy.enemyHP)")
                                 .foregroundColor(.green)
                         }
                         
@@ -80,7 +81,7 @@ struct BattleView: View {
                             .resizable()
                             .frame(width: 100, height: 50)
                     }
-    
+                }
                 .padding()
                 .background(Color.gray.opacity(0.2))
                 .cornerRadius(10)
@@ -126,8 +127,8 @@ struct BattleView: View {
 //                    .background(Color.white)
 //                    .cornerRadius(10)
 //                    .shadow(radius: 5)
-                    Spacer()
-                }
+//                    Spacer()
+//                }
                 .fixedSize() // Fit the frame to the content
                 Spacer()
                 

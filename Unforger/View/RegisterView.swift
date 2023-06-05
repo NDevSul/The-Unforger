@@ -37,7 +37,7 @@ struct RegisterView: View {
                             playerViewModel.player.isShowingProfile = true
                         })
                     } else {
-                        ContentView(vm: roleVM)
+                        BattleView(vm: roleVM)
 //                        ProfileView(nickname: playerViewModel.player.nickname, selectedRole: playerViewModel.player.selectedRole, attack: playerViewModel.player.playerAttack, HP: playerViewModel.player.playerHP, MP: playerViewModel.player.playerMP)
                     }
                 }
