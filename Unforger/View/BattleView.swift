@@ -51,7 +51,7 @@ struct BattleView: View {
                             .padding()
                             .background(Color.white)
                         
-                        Text("Health : \(vm.character.playerHP)\nMana : \(vm.character.playerMP)\nPotion : \(vm.character.potion)")
+                        Text("Health : \(vm.enemy.enemyHP)\nMana : \(vm.character.playerMP)\nPotion : \(vm.character.potion)")
                             .font(.system(size: 24, weight: .bold, design: .default))
                             .foregroundColor(.black)
                             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
@@ -74,8 +74,8 @@ struct BattleView: View {
                 //buttons
                 VStack(spacing: 10) {
                     if vm.disableControl{
-                        Text("Nunggu woi")
-                    }else{
+                        Text("Enemy's Turn")
+                    } else {
                         
                         ForEach(vm.player.skills, id: \.self) { skill in
                             Button(action: {
@@ -95,7 +95,7 @@ struct BattleView: View {
                             
                             if vm.character.potion > 0 {
                                 if vm.character.playerHP >= 100 {
-                                   alertItem = AlertContext.fullHP
+                                    alertItem = AlertContext.fullHP
                                     return
                                 } else {
                                     vm.playerHeal()

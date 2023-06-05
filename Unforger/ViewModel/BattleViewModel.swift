@@ -12,19 +12,26 @@ extension BattleView {
     class ViewModel: ObservableObject {
         
         @Published var character: Player
-        init(character: Player) {
+        @Published var enemy: Enemies
+        init(character: Player, enemy: Enemies) {
             self.character = character
+            self.enemy = enemy
         }
         
+        
         private let animSpeed = 0.2
+        
+        
+        
         @Published var playerCurrentAnim = "idle"
         @Published var playerCurrentAnimCount = 1
         
         @Published var opponentCurrentAnim = "idle"
         @Published var opponentCurrentAnimCount = 1
         
-        @Published var player: Classable = Fighter()
-        @Published var opponent: Classable = Mage()
+        @Published var player: Classable = Assasin()
+        
+        @Published var opponent: Classable = Enemy()
         
         // mendisable spam karena tidak boleh
         @Published var disableControl = false
@@ -32,6 +39,8 @@ extension BattleView {
         
         private var timerPlayer: Timer?
         private var timerOpponent: Timer?
+        
+        
         
         func initAnimation() -> Void {
             self.togglePlayerIdleAnimation()
@@ -142,7 +151,7 @@ extension BattleView {
                     attackTimer!.invalidate()
                     attackTimer = nil
                     
-                    self.character.playerHP -= 50
+                    self.character.playerHP -= self.enemy.enemyAttack
                     
                     if self.character.playerHP <= 0 {
                         self.character.playerHP = 0

@@ -9,6 +9,7 @@ import SwiftUI
 
 struct SplashScreen: View {
     let player = Player(nickname: "", selectedRole: "", isShowingProfile: false, playerAttack: 10, playerHP: 100, playerMP: 50, potion: 5)
+    let enemy = Enemies(enemyName: "Villager")
     @State var isActive : Bool = false
     @State private var size = 0.8
     @State private var opacity = 0.5
@@ -16,7 +17,7 @@ struct SplashScreen: View {
     // Customise your SplashScreen here
     var body: some View {
         if isActive {
-            RegisterView(player: player)
+            RegisterView(player: player, enemy: enemy)
         } else {
             VStack {
                 VStack {

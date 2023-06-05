@@ -9,6 +9,6 @@ import Foundation
 
 struct Enemies{
     var enemyName: String
-    var enemyAttack: Int
-    var enemyHP: Int
+    var enemyAttack: Int = 20
+    var enemyHP: Int = 100
 }
