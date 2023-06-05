@@ -16,6 +16,7 @@ struct BattleView: View {
     let musicPlayer = MusicPlayer()
     var body: some View {
         VStack {
+            
             VStack {
                 Spacer().onAppear { vm.initAnimation() }
                 
@@ -42,6 +43,7 @@ struct BattleView: View {
             // Banner at the top
             // Centered Content
             VStack {
+                Spacer()
                 // Dialog Box
                 VStack {
                     // Player 1 information
@@ -93,49 +95,6 @@ struct BattleView: View {
                 .background(Color.gray.opacity(0.2))
                 .cornerRadius(10)
                 .frame(width: 300, height: 120)
-//                VStack(alignment: .leading) {
-//                    HStack(alignment: .top){
-//                        Image("assassin_model")
-//                            .resizable()
-//                            .aspectRatio(contentMode: .fill)
-//                            .frame(width: 180, height: 100)
-//                            .padding()
-//                            .background(Color.white)
-//
-//                        Text("Health : \(vm.enemy.enemyHP)\nMana : \(vm.character.playerMP)\nPotion : \(vm.character.potion)")
-//                            .font(.system(size: 24, weight: .bold, design: .default))
-//                            .foregroundColor(.black)
-//                            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
-//                            .alignmentGuide(.leading) { _ in -100 }
-//
-//                        Spacer()
-//
-//
-//                        HStack {
-//                            Spacer()
-//
-//                            VStack(alignment: .trailing) {
-//                                Text("Enemy")
-//                                    .font(.title)
-//                                    .foregroundColor(.red)
-//                                Text("Health: 80")
-//                                    .foregroundColor(.green)
-//                            }
-//
-//                            Image("assasin_atk_1")
-//                                .resizable()
-//                                .frame(width: 50, height: 50)
-//                        }
-//
-//                    }
-//                    .frame(maxWidth: .infinity, maxHeight: .infinity)
-//                    .background(Color.white)
-//                    .padding(10)
-//                    .background(Color.white)
-//                    .cornerRadius(10)
-//                    .shadow(radius: 5)
-//                    Spacer()
-//                }
                 .fixedSize() // Fit the frame to the content
                 Spacer()
                 
@@ -145,11 +104,11 @@ struct BattleView: View {
                     if vm.disableControl {
                         Text("Enemy's Turn")
                     } else {
-                        if vm.character.playerHP <= 0 {
-                            alertItem = AlertContext.playerLose
-                        } else if vm.enemy.enemyHP <= 0 {
-                            alertItem = AlertContext.playerWin
-                        } else {
+//                        if vm.character.playerHP <= 0 {
+//                            alertItem = AlertContext.playerLose
+//                        } else if vm.enemy.enemyHP <= 0 {
+//                            alertItem = AlertContext.playerWin
+//                        } else {
                             ForEach(vm.player.skills, id: \.self) { skill in
                                 Button(action: {
                                     vm.doPlayerAttack(skill: skill)
