@@ -37,7 +37,7 @@ struct BottomSheetCastle: View {
         GeometryReader { proxy in
             VStack{
                 CastleView()
-               
+                
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(.white)
@@ -66,6 +66,7 @@ struct BottomSheetCastle: View {
                             translation = .zero
                         }
                     }
+                
             )
             .ignoresSafeArea(edges: .bottom)
         }
