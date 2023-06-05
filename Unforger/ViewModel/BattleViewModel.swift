@@ -107,7 +107,7 @@ extension BattleView {
                             self.opponentCurrentAnim = "idle"
                             self.toggleOpponentIdleAnimation(true)
                             DispatchQueue.main.asyncAfter(deadline: .now() + 1.1) {
-                                self.contohAttackOpponent()
+                                self.doEnemyAttack()
                             }
                             
                         }else{
@@ -126,7 +126,7 @@ extension BattleView {
             
         }
         
-        func contohAttackOpponent() -> Void {
+        func doEnemyAttack() -> Void {
             
             self.toggleOpponentIdleAnimation(false) // matikan loop idle animasi
             self.opponentCurrentAnim = "atk" // ganti ke animasi attack (hanya ada idle dan atk)
@@ -146,7 +146,7 @@ extension BattleView {
                     
                     if self.character.playerHP <= 0 {
                         self.character.playerHP = 0
-                        self.contohMatiPlayer()
+                        self.playerDie()
                     } else {
                         // kembalikan ke idle animation
                         self.opponentCurrentAnim = "idle"
@@ -183,7 +183,11 @@ extension BattleView {
             
         }
         
-        func contohMatiPlayer() -> Void {
+        func playerHeal() -> Void {
+            self.character.playerHP += 20
+        }
+        
+        func playerDie() -> Void {
             
             self.disableControl = true
             

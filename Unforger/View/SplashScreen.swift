@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SplashScreen: View {
-    let player = Player(nickname: "", selectedRole: "", isShowingProfile: false, playerAttack: 10, playerHP: 100, playerMP: 50)
+    let player = Player(nickname: "", selectedRole: "", isShowingProfile: false, playerAttack: 10, playerHP: 100, playerMP: 50, potion: 5)
     @State var isActive : Bool = false
     @State private var size = 0.8
     @State private var opacity = 0.5

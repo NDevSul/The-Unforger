@@ -14,4 +14,5 @@ struct Player {
     var playerAttack: Int
     var playerHP: Int
     var playerMP: Int
+    var potion: Int
 }
