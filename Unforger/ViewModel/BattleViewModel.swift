@@ -151,6 +151,7 @@ extension BattleView {
                     attackTimer!.invalidate()
                     attackTimer = nil
                     
+                    // attack musuh
                     self.character.playerHP -= self.enemy.enemyAttack
                     
                     if self.character.playerHP <= 0 {
