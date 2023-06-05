@@ -42,29 +42,90 @@ struct BattleView: View {
             // Centered Content
             VStack {
                 // Dialog Box
-                VStack(alignment: .leading) {
-                    HStack(alignment: .top){
-                        Image("assassin_model")
+                VStack {
+                    // Player 1 information
+                    HStack {
+                        Image("assasin_atk_1")
                             .resizable()
-                            .aspectRatio(contentMode: .fill)
-                            .frame(width: 180, height: 100)
-                            .padding()
-                            .background(Color.white)
+                            .frame(width: 100, height: 50)
                         
-                        Text("Health : \(vm.enemy.enemyHP)\nMana : \(vm.character.playerMP)\nPotion : \(vm.character.potion)")
-                            .font(.system(size: 24, weight: .bold, design: .default))
-                            .foregroundColor(.black)
-                            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
-                            .alignmentGuide(.leading) { _ in -100 }
+                        VStack(alignment: .leading) {
+                            Text("Player 1")
+                                .font(.title)
+                                .foregroundColor(.blue)
+                            Text("Health: 100")
+                                .foregroundColor(.green)
+                            Text("Mana: 50")
+                                .foregroundColor(.orange)
+                        }
                         
                         Spacer()
                     }
-                    .frame(maxWidth: .infinity, maxHeight: .infinity)
-                    .background(Color.white)
-                    .padding(10)
-                    .background(Color.white)
-                    .cornerRadius(10)
-                    .shadow(radius: 5)
+                    
+                    Divider() // Optional divider line
+                    
+                    // Player 2 information
+                    HStack {
+                        Spacer()
+                        
+                        VStack(alignment: .trailing) {
+                            Text("Enemy")
+                                .font(.title)
+                                .foregroundColor(.red)
+                            Text("Health: 80")
+                                .foregroundColor(.green)
+                        }
+                        
+                        Image("assasin_atk_1")
+                            .resizable()
+                            .frame(width: 100, height: 50)
+                    }
+    
+                .padding()
+                .background(Color.gray.opacity(0.2))
+                .cornerRadius(10)
+                .frame(width: 300, height: 120)
+//                VStack(alignment: .leading) {
+//                    HStack(alignment: .top){
+//                        Image("assassin_model")
+//                            .resizable()
+//                            .aspectRatio(contentMode: .fill)
+//                            .frame(width: 180, height: 100)
+//                            .padding()
+//                            .background(Color.white)
+//
+//                        Text("Health : \(vm.enemy.enemyHP)\nMana : \(vm.character.playerMP)\nPotion : \(vm.character.potion)")
+//                            .font(.system(size: 24, weight: .bold, design: .default))
+//                            .foregroundColor(.black)
+//                            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
+//                            .alignmentGuide(.leading) { _ in -100 }
+//
+//                        Spacer()
+//
+//
+//                        HStack {
+//                            Spacer()
+//
+//                            VStack(alignment: .trailing) {
+//                                Text("Enemy")
+//                                    .font(.title)
+//                                    .foregroundColor(.red)
+//                                Text("Health: 80")
+//                                    .foregroundColor(.green)
+//                            }
+//
+//                            Image("assasin_atk_1")
+//                                .resizable()
+//                                .frame(width: 50, height: 50)
+//                        }
+//
+//                    }
+//                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+//                    .background(Color.white)
+//                    .padding(10)
+//                    .background(Color.white)
+//                    .cornerRadius(10)
+//                    .shadow(radius: 5)
                     Spacer()
                 }
                 .fixedSize() // Fit the frame to the content
@@ -137,7 +198,6 @@ struct BattleView: View {
             musicPlayer.stop()
         }
         Spacer()
-        
     }
 }
 
