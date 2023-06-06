@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct Dyingview: View {
+    @StateObject var playerViewModel: PlayerViewModel
+    @ObservedObject var vm: BattleView.ViewModel
     @State var show = false
     var body: some View {
         ZStack{
@@ -45,7 +47,7 @@ struct Dyingview: View {
                     }
                 }
                 .sheet(isPresented: $show) {
-                    BattleView(playerViewModel: PlayerViewModel, vm: vm)
+                    BattleView(playerViewModel: playerViewModel, vm: vm)
                 }
                 
             }
@@ -53,8 +55,8 @@ struct Dyingview: View {
     }
 }
 
-struct Dyingview_Previews: PreviewProvider {
-    static var previews: some View {
-        Dyingview()
-    }
-}
+//struct Dyingview_Previews: PreviewProvider {
+//    static var previews: some View {
+//        Dyingview()
+//    }
+//}

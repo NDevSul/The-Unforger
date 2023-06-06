@@ -8,16 +8,12 @@
 import SwiftUI
 
 struct CastleView: View {
+    @StateObject var playerViewModel: PlayerViewModel
     @ObservedObject var vm: BattleView.ViewModel
     @State var show = false
     @State private var navigateToBattleView = false // State variable to control navigation
 
     var body: some View {
-//        NavigationLink(
-//            destination: BattleView(vm: vm), isActive: $navigateToBattleView) { // Use NavigationLink to navigate to BattleView
-//                    EmptyView()
-//                }
-//                .hidden()
         ZStack{
             ScrollView{
                 SheetCardCastle()
@@ -52,7 +48,9 @@ struct CastleView: View {
                         }
                     }
                 }
-                
+                .sheet(isPresented: $show) {
+                    BattleView(playerViewModel: playerViewModel, vm: vm)
+                }
             }
         }
     }

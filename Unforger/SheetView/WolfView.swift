@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct WolfView: View {
+    @StateObject var playerViewModel: PlayerViewModel
+    @ObservedObject var vm: BattleView.ViewModel
+
     @State var show = false
     var body: some View {
         ZStack{
@@ -43,14 +46,16 @@ struct WolfView: View {
                         }
                     }
                 }
-                
+                .sheet(isPresented: $show) {
+                    BattleView(playerViewModel: playerViewModel, vm: vm)
+                }
             }
         }
     }
 }
 
-struct WolfView_Previews: PreviewProvider {
-    static var previews: some View {
-        WolfView()
-    }
-}
+//struct WolfView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        WolfView()
+//    }
+//}

@@ -11,6 +11,7 @@ struct BattleView: View {
     @StateObject var playerViewModel: PlayerViewModel
     @ObservedObject var vm: ViewModel
     @State private var alertItem: AlertItem?
+    @State var show = false
     
     
     let musicPlayer = MusicPlayer()
@@ -79,7 +80,7 @@ struct BattleView: View {
                                 .foregroundColor(.green)
                         }
                         
-                        Image("assasin_atk_1")
+                        Image("enemy_idle_1")
                             .resizable()
                             .frame(width: 100, height: 50)
                     }
@@ -103,15 +104,48 @@ struct BattleView: View {
                 VStack(spacing: 10) {
                     if vm.disableControl {
                         Text("Enemy's Turn")
+                        if vm.enemy.enemyHP <= 0 {
+                            Button(action: {
+                                show.toggle()
+                                vm.character.playerHP += 100
+                                vm.enemy.enemyHP += 100
+                            }) {
+                                Text("Back Home")
+                                    .frame(width: 150, height: 10)
+                                    .foregroundColor(.white)
+                                    .padding()
+                                    .background(.blue)
+                                
+                            }
+                        } else if vm.character.playerHP <= 0 {
+                            
+                            Button(action: {
+                                show.toggle()
+                                vm.character.playerHP += 100
+                                vm.enemy.enemyHP += 100
+                            }) {
+                                Text("Back Home")
+                                    .frame(width: 150, height: 10)
+                                    .foregroundColor(.white)
+                                    .padding()
+                                    .background(.blue)
+                                
+                            }
+                        }
+                            
                     } else {
-//                        if vm.character.playerHP <= 0 {
-//                            alertItem = AlertContext.playerLose
-//                        } else if vm.enemy.enemyHP <= 0 {
-//                            alertItem = AlertContext.playerWin
-//                        } else {
                             ForEach(vm.player.skills, id: \.self) { skill in
                                 Button(action: {
                                     vm.doPlayerAttack(skill: skill)
+                                    if vm.character.playerHP <= 0 {
+                                        alertItem = AlertContext.playerLose
+                                        ContentView(playerViewModel: playerViewModel, vm: vm)
+                                    } else if vm.enemy.enemyHP <= 0 {
+                                        alertItem = AlertContext.playerWin
+                                        ContentView(playerViewModel: playerViewModel, vm: vm)
+                                    } else if vm.character.playerHP > 0 && vm.enemy.enemyHP > 0 {
+                                        
+                                    }
                                     
                                     if vm.player.skills[0].skillName == skill.skillName {
                                         vm.skill1()
@@ -132,9 +166,12 @@ struct BattleView: View {
                                 }
                             }
                             Button(action: {
-                                
+                                if vm.character.playerMP <= 0 {
+                                    alertItem = AlertContext.noMP
+                                    vm.character.playerMP = 0 
+                                }
                                 if vm.character.potion > 0 {
-                                    if vm.character.playerHP >= 100 || vm.character.playerMP >= 50 {
+                                    if vm.character.playerHP >= 100  {
                                         alertItem = AlertContext.fullHP
                                         return
                                     } else {
@@ -160,6 +197,9 @@ struct BattleView: View {
                             }
                         }
                     }
+                .sheet(isPresented: $show) {
+                    ContentView(playerViewModel: playerViewModel, vm: vm)
+                }
                 }
 
             .frame(maxWidth: .infinity)

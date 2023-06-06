@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct BottomSheetCastle: View {
+    @StateObject var playerViewModel: PlayerViewModel
     @ObservedObject var vm: BattleView.ViewModel
     @State var translation: CGSize = .zero
     @State var offsetY: CGFloat = 0
@@ -38,7 +39,7 @@ struct BottomSheetCastle: View {
 
         GeometryReader { proxy in
             VStack{
-                CastleView(vm: vm)
+                CastleView(playerViewModel: playerViewModel, vm: vm)
                 
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)

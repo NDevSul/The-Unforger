@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var playerViewModel: PlayerViewModel
     @ObservedObject var vm: BattleView.ViewModel
-
     @State var show = false
     @State var print = false
     @State var blok = false
@@ -85,14 +85,14 @@ struct ContentView: View {
 //                ProfileView()
             }
             .sheet(isPresented: $show) {
-                BottomSheetCastle(vm: vm, show: $show)
+                BottomSheetCastle(playerViewModel: playerViewModel, vm: vm, show: $show)
             }
             
             .sheet(isPresented: $print) {
-                BottomSheetWolf(show: $print)
+                BottomSheetWolf(playerViewModel: playerViewModel, vm: vm, show: $print)
             }
             .sheet(isPresented: $blok) {
-                BottomSheetDying(show: $blok)
+                BottomSheetDying(playerViewModel: playerViewModel, vm: vm, show: $blok)
             }
         }
         

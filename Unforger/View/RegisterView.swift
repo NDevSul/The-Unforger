@@ -32,12 +32,13 @@ struct RegisterView: View {
                     if !playerViewModel.player.isShowingProfile {
                         NicknameView(nickname: $playerViewModel.player.nickname, nextAction: { playerViewModel.player.isShowingProfile = true })
                     } else if playerViewModel.player.selectedRole == "" {
-                        RoleSelectionView(vm: roleVM, selectedRole: $playerViewModel.player.selectedRole, confirmAction: { role in
+                        RoleSelectionView(playerViewModel: playerViewModel, vm: roleVM, selectedRole: $playerViewModel.player.selectedRole, confirmAction: { role in
                             playerViewModel.player.selectedRole = role
                             playerViewModel.player.isShowingProfile = true
                         })
                     } else {
-                        BattleView(playerViewModel: playerViewModel, vm: roleVM)
+                        ContentView(playerViewModel: playerViewModel, vm: roleVM)
+//                        BattleView(playerViewModel: playerViewModel, vm: roleVM)
 //                        ProfileView(nickname: playerViewModel.player.nickname, selectedRole: playerViewModel.player.selectedRole, attack: playerViewModel.player.playerAttack, HP: playerViewModel.player.playerHP, MP: playerViewModel.player.playerMP)
                     }
                 }

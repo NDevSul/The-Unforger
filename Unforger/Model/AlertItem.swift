@@ -17,7 +17,14 @@ struct AlertItem: Identifiable {
 
 struct AlertContext {
     static let fullHP    = AlertItem(title: Text("Full HP!"),
-                                       message: Text("Your health / mana is still full"),
+                                       message: Text("Your health is still full"),
+                                       buttonTitle: Text("Ok"))
+    
+    static let fullMP    = AlertItem(title: Text("Full MP!"),
+                                       message: Text("Your mana is still full"),
+                                       buttonTitle: Text("Ok"))
+    static let noMP    = AlertItem(title: Text("0 MP!"),
+                                       message: Text("Your mana is empty"),
                                        buttonTitle: Text("Ok"))
     
     static let noPotion    = AlertItem(title: Text("0 Potion!"),

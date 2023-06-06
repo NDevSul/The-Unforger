@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct BottomSheetWolf: View {
+    @StateObject var playerViewModel: PlayerViewModel
+    @ObservedObject var vm: BattleView.ViewModel
     @State var translation: CGSize = .zero
     @State var offsetY: CGFloat = 0
     @Binding var show: Bool
@@ -36,7 +38,7 @@ struct BottomSheetWolf: View {
     var content: some View {
         GeometryReader { proxy in
             VStack{
-                WolfView()
+                WolfView(playerViewModel: playerViewModel, vm: vm)
                
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -71,9 +73,10 @@ struct BottomSheetWolf: View {
         }
     }
 }
-struct BottomSheetWolf_Previews: PreviewProvider {
-    static var previews: some View {
-        BottomSheetWolf(show: .constant(true))
-            .background(.blue)
-    }
-}
+
+//struct BottomSheetWolf_Previews: PreviewProvider {
+//    static var previews: some View {
+//        BottomSheetWolf(show: .constant(true))
+//            .background(.blue)
+//    }
+//}
