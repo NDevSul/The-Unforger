@@ -44,6 +44,9 @@ struct Dyingview: View {
                         }
                     }
                 }
+                .sheet(isPresented: $show) {
+                    BattleView(playerViewModel: PlayerViewModel, vm: vm)
+                }
                 
             }
         }

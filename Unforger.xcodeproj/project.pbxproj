@@ -50,6 +50,26 @@
 		0480F6342A2C8FBC0060E7E4 /* MusicPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0480F6332A2C8FBC0060E7E4 /* MusicPlayer.swift */; };
 		0480F6362A2C8FF90060E7E4 /* lagudegdegan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0480F6352A2C8FF90060E7E4 /* lagudegdegan.mp3 */; };
 		0480F63C2A2CF1760060E7E4 /* Fighter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0480F63B2A2CF1760060E7E4 /* Fighter.swift */; };
+		04C59B462A2EA63C0050F75B /* MacUnforgerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C59B452A2EA63C0050F75B /* MacUnforgerApp.swift */; };
+		04C59B482A2EA63C0050F75B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C59B472A2EA63C0050F75B /* ContentView.swift */; };
+		04C59B4A2A2EA63D0050F75B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04C59B492A2EA63D0050F75B /* Assets.xcassets */; };
+		04C59B4D2A2EA63D0050F75B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04C59B4C2A2EA63D0050F75B /* Preview Assets.xcassets */; };
+		04C59B532A2EA67D0050F75B /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C59B522A2EA67D0050F75B /* Register.swift */; };
+		04C59B552A2EA6950050F75B /* Splash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C59B542A2EA6950050F75B /* Splash.swift */; };
+		04C59B572A2EA6FD0050F75B /* Nickname.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C59B562A2EA6FD0050F75B /* Nickname.swift */; };
+		04C59B592A2EA7420050F75B /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C59B582A2EA7420050F75B /* Player.swift */; };
+		04C59B5B2A2EA74B0050F75B /* Enemies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C59B5A2A2EA74B0050F75B /* Enemies.swift */; };
+		04C59B5E2A2EA7FF0050F75B /* Role.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C59B5D2A2EA7FF0050F75B /* Role.swift */; };
+		04C59B602A2EA8890050F75B /* PlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C59B5F2A2EA8890050F75B /* PlayerViewModel.swift */; };
+		04C59B632A2EA8E90050F75B /* Mage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C59B622A2EA8E90050F75B /* Mage.swift */; };
+		04C59B652A2EA8F10050F75B /* Fighter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C59B642A2EA8F10050F75B /* Fighter.swift */; };
+		04C59B672A2EA8F90050F75B /* Assasin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C59B662A2EA8F90050F75B /* Assasin.swift */; };
+		04C59B692A2EACCD0050F75B /* BattleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C59B682A2EACCD0050F75B /* BattleView.swift */; };
+		04C59B6B2A2EAD800050F75B /* BattleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C59B6A2A2EAD800050F75B /* BattleViewModel.swift */; };
+		04C59B6D2A2EAD9E0050F75B /* Skills.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C59B6C2A2EAD9E0050F75B /* Skills.swift */; };
+		04C59B6F2A2EADC70050F75B /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C59B6E2A2EADC70050F75B /* Job.swift */; };
+		04C59B712A2EADDC0050F75B /* Enemy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C59B702A2EADDC0050F75B /* Enemy.swift */; };
+		04C59B732A2EAE4C0050F75B /* AlertItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C59B722A2EAE4C0050F75B /* AlertItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +136,28 @@
 		0480F6332A2C8FBC0060E7E4 /* MusicPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayer.swift; sourceTree = "<group>"; };
 		0480F6352A2C8FF90060E7E4 /* lagudegdegan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = lagudegdegan.mp3; sourceTree = "<group>"; };
 		0480F63B2A2CF1760060E7E4 /* Fighter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fighter.swift; sourceTree = "<group>"; };
+		04C59B432A2EA63B0050F75B /* MacUnforger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacUnforger.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		04C59B452A2EA63C0050F75B /* MacUnforgerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacUnforgerApp.swift; sourceTree = "<group>"; };
+		04C59B472A2EA63C0050F75B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		04C59B492A2EA63D0050F75B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04C59B4C2A2EA63D0050F75B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		04C59B4E2A2EA63D0050F75B /* MacUnforger.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MacUnforger.entitlements; sourceTree = "<group>"; };
+		04C59B522A2EA67D0050F75B /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
+		04C59B542A2EA6950050F75B /* Splash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Splash.swift; sourceTree = "<group>"; };
+		04C59B562A2EA6FD0050F75B /* Nickname.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nickname.swift; sourceTree = "<group>"; };
+		04C59B582A2EA7420050F75B /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		04C59B5A2A2EA74B0050F75B /* Enemies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enemies.swift; sourceTree = "<group>"; };
+		04C59B5D2A2EA7FF0050F75B /* Role.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Role.swift; sourceTree = "<group>"; };
+		04C59B5F2A2EA8890050F75B /* PlayerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewModel.swift; sourceTree = "<group>"; };
+		04C59B622A2EA8E90050F75B /* Mage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mage.swift; sourceTree = "<group>"; };
+		04C59B642A2EA8F10050F75B /* Fighter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fighter.swift; sourceTree = "<group>"; };
+		04C59B662A2EA8F90050F75B /* Assasin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assasin.swift; sourceTree = "<group>"; };
+		04C59B682A2EACCD0050F75B /* BattleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleView.swift; sourceTree = "<group>"; };
+		04C59B6A2A2EAD800050F75B /* BattleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleViewModel.swift; sourceTree = "<group>"; };
+		04C59B6C2A2EAD9E0050F75B /* Skills.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Skills.swift; sourceTree = "<group>"; };
+		04C59B6E2A2EADC70050F75B /* Job.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
+		04C59B702A2EADDC0050F75B /* Enemy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enemy.swift; sourceTree = "<group>"; };
+		04C59B722A2EAE4C0050F75B /* AlertItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +176,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		041199B12A2040AD00628E84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04C59B402A2EA63B0050F75B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -217,6 +266,7 @@
 				0411999C2A2040AB00628E84 /* Unforger */,
 				041199AD2A2040AD00628E84 /* UnforgerTests */,
 				041199B72A2040AD00628E84 /* UnforgerUITests */,
+				04C59B442A2EA63C0050F75B /* MacUnforger */,
 				0411999B2A2040AB00628E84 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -227,6 +277,7 @@
 				0411999A2A2040AB00628E84 /* Unforger.app */,
 				041199AA2A2040AD00628E84 /* UnforgerTests.xctest */,
 				041199B42A2040AD00628E84 /* UnforgerUITests.xctest */,
+				04C59B432A2EA63B0050F75B /* MacUnforger.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -307,6 +358,58 @@
 			path = Music;
 			sourceTree = "<group>";
 		};
+		04C59B442A2EA63C0050F75B /* MacUnforger */ = {
+			isa = PBXGroup;
+			children = (
+				04C59B612A2EA8DC0050F75B /* Model */,
+				04C59B5C2A2EA7540050F75B /* View */,
+				04C59B452A2EA63C0050F75B /* MacUnforgerApp.swift */,
+				04C59B492A2EA63D0050F75B /* Assets.xcassets */,
+				04C59B4E2A2EA63D0050F75B /* MacUnforger.entitlements */,
+				04C59B4B2A2EA63D0050F75B /* Preview Content */,
+				04C59B582A2EA7420050F75B /* Player.swift */,
+				04C59B5A2A2EA74B0050F75B /* Enemies.swift */,
+				04C59B5F2A2EA8890050F75B /* PlayerViewModel.swift */,
+			);
+			path = MacUnforger;
+			sourceTree = "<group>";
+		};
+		04C59B4B2A2EA63D0050F75B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				04C59B4C2A2EA63D0050F75B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		04C59B5C2A2EA7540050F75B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04C59B562A2EA6FD0050F75B /* Nickname.swift */,
+				04C59B472A2EA63C0050F75B /* ContentView.swift */,
+				04C59B522A2EA67D0050F75B /* Register.swift */,
+				04C59B542A2EA6950050F75B /* Splash.swift */,
+				04C59B5D2A2EA7FF0050F75B /* Role.swift */,
+				04C59B682A2EACCD0050F75B /* BattleView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04C59B612A2EA8DC0050F75B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04C59B622A2EA8E90050F75B /* Mage.swift */,
+				04C59B642A2EA8F10050F75B /* Fighter.swift */,
+				04C59B662A2EA8F90050F75B /* Assasin.swift */,
+				04C59B6A2A2EAD800050F75B /* BattleViewModel.swift */,
+				04C59B6C2A2EAD9E0050F75B /* Skills.swift */,
+				04C59B6E2A2EADC70050F75B /* Job.swift */,
+				04C59B702A2EADDC0050F75B /* Enemy.swift */,
+				04C59B722A2EAE4C0050F75B /* AlertItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -363,6 +466,23 @@
 			productReference = 041199B42A2040AD00628E84 /* UnforgerUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		04C59B422A2EA63B0050F75B /* MacUnforger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04C59B512A2EA63D0050F75B /* Build configuration list for PBXNativeTarget "MacUnforger" */;
+			buildPhases = (
+				04C59B3F2A2EA63B0050F75B /* Sources */,
+				04C59B402A2EA63B0050F75B /* Frameworks */,
+				04C59B412A2EA63B0050F75B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MacUnforger;
+			productName = MacUnforger;
+			productReference = 04C59B432A2EA63B0050F75B /* MacUnforger.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -384,6 +504,9 @@
 						CreatedOnToolsVersion = 14.2;
 						TestTargetID = 041199992A2040AB00628E84;
 					};
+					04C59B422A2EA63B0050F75B = {
+						CreatedOnToolsVersion = 14.2;
+					};
 				};
 			};
 			buildConfigurationList = 041199952A2040AB00628E84 /* Build configuration list for PBXProject "Unforger" */;
@@ -402,6 +525,7 @@
 				041199992A2040AB00628E84 /* Unforger */,
 				041199A92A2040AD00628E84 /* UnforgerTests */,
 				041199B32A2040AD00628E84 /* UnforgerUITests */,
+				04C59B422A2EA63B0050F75B /* MacUnforger */,
 			);
 		};
 /* End PBXProject section */
@@ -428,6 +552,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04C59B412A2EA63B0050F75B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04C59B4D2A2EA63D0050F75B /* Preview Assets.xcassets in Resources */,
+				04C59B4A2A2EA63D0050F75B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,6 +625,31 @@
 			files = (
 				041199BB2A2040AD00628E84 /* UnforgerUITestsLaunchTests.swift in Sources */,
 				041199B92A2040AD00628E84 /* UnforgerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		04C59B3F2A2EA63B0050F75B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04C59B602A2EA8890050F75B /* PlayerViewModel.swift in Sources */,
+				04C59B652A2EA8F10050F75B /* Fighter.swift in Sources */,
+				04C59B532A2EA67D0050F75B /* Register.swift in Sources */,
+				04C59B482A2EA63C0050F75B /* ContentView.swift in Sources */,
+				04C59B552A2EA6950050F75B /* Splash.swift in Sources */,
+				04C59B462A2EA63C0050F75B /* MacUnforgerApp.swift in Sources */,
+				04C59B632A2EA8E90050F75B /* Mage.swift in Sources */,
+				04C59B732A2EAE4C0050F75B /* AlertItem.swift in Sources */,
+				04C59B712A2EADDC0050F75B /* Enemy.swift in Sources */,
+				04C59B592A2EA7420050F75B /* Player.swift in Sources */,
+				04C59B6B2A2EAD800050F75B /* BattleViewModel.swift in Sources */,
+				04C59B5B2A2EA74B0050F75B /* Enemies.swift in Sources */,
+				04C59B572A2EA6FD0050F75B /* Nickname.swift in Sources */,
+				04C59B692A2EACCD0050F75B /* BattleView.swift in Sources */,
+				04C59B672A2EA8F90050F75B /* Assasin.swift in Sources */,
+				04C59B6D2A2EAD9E0050F75B /* Skills.swift in Sources */,
+				04C59B5E2A2EA7FF0050F75B /* Role.swift in Sources */,
+				04C59B6F2A2EADC70050F75B /* Job.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -759,6 +917,64 @@
 			};
 			name = Release;
 		};
+		04C59B4F2A2EA63D0050F75B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MacUnforger/MacUnforger.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MacUnforger/Preview Content\"";
+				DEVELOPMENT_TEAM = L57KGB7W33;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.devanoivn.afl1.MacUnforger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		04C59B502A2EA63D0050F75B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MacUnforger/MacUnforger.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MacUnforger/Preview Content\"";
+				DEVELOPMENT_TEAM = L57KGB7W33;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.devanoivn.afl1.MacUnforger;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -794,6 +1010,15 @@
 			buildConfigurations = (
 				041199C52A2040AD00628E84 /* Debug */,
 				041199C62A2040AD00628E84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		04C59B512A2EA63D0050F75B /* Build configuration list for PBXNativeTarget "MacUnforger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04C59B4F2A2EA63D0050F75B /* Debug */,
+				04C59B502A2EA63D0050F75B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
